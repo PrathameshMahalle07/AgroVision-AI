@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#142C1F"/>
+      <stop offset="50%" stop-color="#234E35"/>
+      <stop offset="100%" stop-color="#183B26"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3FA663"/>
+      <stop offset="60%" stop-color="#55D481"/>
+      <stop offset="100%" stop-color="#A7F3B8"/>
+    </linearGradient>
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCD34D"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#07120B" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle for Android -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+
+  <!-- Subtle golden sun arc in top right -->
+  <circle cx="390" cy="120" r="46" fill="url(#goldGlow)" opacity="0.85" filter="url(#softShadow)"/>
+
+  <!-- Botanical Sprout Emblem -->
+  <g filter="url(#softShadow)" transform="translate(4, 8)">
+    <!-- Main primary leaf blade -->
+    <path d="M 256 128 C 360 128 400 240 376 348 C 300 372 230 336 216 264 C 206 214 220 160 256 128 Z" fill="url(#leafGrad)"/>
+    
+    <!-- Central leaf vein -->
+    <path d="M 230 326 C 260 270 290 220 340 180" stroke="#164326" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.6"/>
+    
+    <!-- Secondary sprouting leaf -->
+    <path d="M 240 280 C 160 270 128 340 148 404 C 210 412 250 370 254 320 Z" fill="#48BB78"/>
+    
+    <!-- Stem / Root anchor base -->
+    <path d="M 252 330 C 252 380 250 424 246 448" stroke="#A7F3B8" stroke-width="14" stroke-linecap="round" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,3239 @@
+[
+  {
+    "id": "rice-paddy",
+    "name": "Rice (Paddy)",
+    "localName": "भात / तांदूळ / धान (Dhan)",
+    "scientificName": "Oryza sativa",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif & Summer",
+    "maharashtraRegion": "Konkan (Ratnagiri, Sindhudurg, Raigad, Thane), Eastern Vidarbha (Bhandara, Gondia, Chandrapur, Gadchiroli)",
+    "description": "Primary staple cereal of coastal Maharashtra and Vidarbha lake districts. Grown under puddled flooded conditions or upland terraces.",
+    "optimalTemp": "22°C - 32°C (warm, humid)",
+    "waterRequirement": "1,000 - 1,400 mm; standing water layer (2-5 cm) during vegetative phase.",
+    "soilPreference": "Heavy clay loam or silty clay soils with high water retention, pH 5.5 - 7.0.",
+    "growthStages": [
+      {
+        "stage": "Nursery & Seedling",
+        "days": "Days 1-25",
+        "description": "Raised bed seedling raising; 21-day seedlings transplanted to puddled field."
+      },
+      {
+        "stage": "Tillering & Vegetative",
+        "days": "Days 26-60",
+        "description": "Active tiller production and crown root expansion in flooded mud."
+      },
+      {
+        "stage": "Panicle Initiation & Booting",
+        "days": "Days 61-90",
+        "description": "Flag leaf emergence and panicle formation inside sheath; flowering begins."
+      },
+      {
+        "stage": "Grain Filling & Harvesting",
+        "days": "Days 91-125",
+        "description": "Milky, dough, and mature golden grain hardening; field drained 10 days prior to sickle harvest."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Rice Blast (Magnaporthe oryzae)",
+        "symptoms": "Spindle-shaped diamond spots with grey center and dark brown margin on leaves and panicle neck.",
+        "riskPeriod": "Night temperatures 20-24°C with continuous drizzling rain and relative humidity >90%."
+      },
+      {
+        "name": "Bacterial Leaf Blight (Xanthomonas oryzae)",
+        "symptoms": "Water-soaked wavy lesions starting at leaf margins turning dull yellow with white bacterial crusts.",
+        "riskPeriod": "Warm temperatures (25-34°C) with strong wind-driven monsoon rains."
+      },
+      {
+        "name": "Sheath Blight (Rhizoctonia solani)",
+        "symptoms": "Greenish-grey oval water-soaked blotches on leaf sheaths just above the waterline.",
+        "riskPeriod": "High humidity (>95%) and heavy top-dressed nitrogen fertilizer."
+      }
+    ],
+    "commonPests": [
+      "Yellow Stem Borer",
+      "Brown Planthopper (BPH)",
+      "Rice Gall Midge",
+      "Leaf Folder",
+      "Gundhi Bug"
+    ],
+    "generalPrevention": [
+      "Use certified resistant varieties such as Karjat-3, Indrayani, PKV HMT, or Ratna.",
+      "Treat seed with Trichoderma harzianum @ 5g/kg or Carbendazim @ 2g/kg.",
+      "Adopt Alternate Wetting and Drying (AWD) water management to suppress Brown Planthopper.",
+      "Avoid excessive basal urea; split nitrogen into 3 equal applications with potassium at panicle stage."
+    ]
+  },
+  {
+    "id": "wheat",
+    "name": "Wheat",
+    "localName": "गहू (Gahu)",
+    "scientificName": "Triticum aestivum",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Rabi (Winter)",
+    "maharashtraRegion": "Western Maharashtra (Pune, Ahmednagar, Satara, Kolhapur), Vidarbha (Nagpur, Amravati), Khandesh (Jalgaon)",
+    "description": "Premier winter cereal crop of India, grown extensively under irrigated black cotton soils in Maharashtra and alluvial plains of North India.",
+    "optimalTemp": "12°C - 25°C (cool nights during tillering, bright sunshine during grain fill)",
+    "waterRequirement": "400 - 500 mm across 4-6 critical irrigations (CRI, tillering, jointing, flowering, milking).",
+    "soilPreference": "Deep, fertile well-drained clay loam or medium black cotton soil, pH 6.5 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Crown Root Initiation (CRI)",
+        "days": "Days 20-25",
+        "description": "First whorl of crown roots forms below soil surface; paramount irrigation window."
+      },
+      {
+        "stage": "Tillering & Jointing",
+        "days": "Days 26-55",
+        "description": "Nodes elongate, vegetative tillers develop; canopy closes."
+      },
+      {
+        "stage": "Heading & Anthesis",
+        "days": "Days 56-85",
+        "description": "Earhead emerges from flag leaf boot; pollination occurs."
+      },
+      {
+        "stage": "Milking, Dough & Maturity",
+        "days": "Days 86-115",
+        "description": "Starch accumulates; straw turns golden yellow; grains harden."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Brown / Leaf Rust (Puccinia triticina)",
+        "symptoms": "Round to oval orange-brown powdery pustules scattered randomly across upper leaf blade.",
+        "riskPeriod": "Warm humid winter days (18-25°C) with morning dew."
+      },
+      {
+        "name": "Yellow / Stripe Rust (Puccinia striiformis)",
+        "symptoms": "Linear bright yellow stripes of powdery pustules arranged between leaf veins.",
+        "riskPeriod": "Cool winter temperatures (10-18°C) with persistent fog."
+      },
+      {
+        "name": "Loose Smut (Ustilago tritici)",
+        "symptoms": "Entire earhead transformed into a loose sooty black mass of fungal spores.",
+        "riskPeriod": "Infected seeds germinating in cool moist soil."
+      }
+    ],
+    "commonPests": [
+      "Wheat Aphids",
+      "Armyworm",
+      "Termites",
+      "Pink Stem Borer"
+    ],
+    "generalPrevention": [
+      "Sow in first fortnight of November to escape terminal heat in Central India.",
+      "Use certified high-yielding resistant varieties: Samadhan (NIAW-1994), Trimbak, or MACS-6222.",
+      "Treat seed with Carboxin + Thiram (Vitavax) @ 2.5g/kg for complete loose smut control.",
+      "Irrigate lightly at milk stage on calm windless days to prevent crop lodging."
+    ]
+  },
+  {
+    "id": "sorghum-jowar",
+    "name": "Sorghum (Jowar)",
+    "localName": "ज्वारी (Jowar) / मालदांडी (Maldandi)",
+    "scientificName": "Sorghum bicolor",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif & Rabi",
+    "maharashtraRegion": "Solapur (Maldandi Capital of India), Marathwada (Latur, Beed, Osmanabad), Ahmednagar, Pune, Jalgaon",
+    "description": "The golden heart of Maharashtra dryland agriculture. Drought-resilient C4 cereal famous for delicious pearl bhakri and high-quality livestock fodder (kadbi). Solapur Maldandi M 35-1 is world-renowned.",
+    "optimalTemp": "26°C - 34°C (heat and drought hardy)",
+    "waterRequirement": "350 - 450 mm; extraordinary water efficiency.",
+    "soilPreference": "Medium to deep black clay soils (Vertisols) with moisture retention, pH 6.5 - 8.5.",
+    "growthStages": [
+      {
+        "stage": "Seedling & Early Vegetative",
+        "days": "Days 1-25",
+        "description": "Rapid germination; shoot fly vulnerable period."
+      },
+      {
+        "stage": "Stem Elongation & Panicle Initiation",
+        "days": "Days 26-55",
+        "description": "Dense node elongation; growing point converts into panicle."
+      },
+      {
+        "stage": "Booting & Anthesis",
+        "days": "Days 56-75",
+        "description": "Spike emerges from flag leaf collar; cross-pollination by wind."
+      },
+      {
+        "stage": "Grain Filling & Black Layer Maturity",
+        "days": "Days 76-110",
+        "description": "Pearly grains fill; black layer at seed base marks physiological maturity."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Grain Mold (Fusarium & Curvularia)",
+        "symptoms": "Pink, black, or grey discoloration on developing grain heads following rain.",
+        "riskPeriod": "Unseasonal wet spells during grain-filling stage."
+      },
+      {
+        "name": "Downy Mildew (Peronosclerospora sorghi)",
+        "symptoms": "Vivid chlorotic yellow striping on leaves with downy white fungal growth on undersides.",
+        "riskPeriod": "High humidity with cool night temperatures (20°C)."
+      },
+      {
+        "name": "Charcoal Rot (Macrophomina phaseolina)",
+        "symptoms": "Internal stalk shredding with tiny charcoal-like sclerotia causing lodging.",
+        "riskPeriod": "Post-flowering soil moisture stress and soil temperatures exceeding 35°C."
+      }
+    ],
+    "commonPests": [
+      "Sorghum Shoot Fly",
+      "Stem Borer (Chilo partellus)",
+      "Fall Armyworm",
+      "Earhead Midge"
+    ],
+    "generalPrevention": [
+      "Complete sowing within 10-15 days of monsoon onset to escape destructive shoot fly egg laying.",
+      "Treat seed with Imidacloprid 70 WS @ 7g/kg + Trichoderma @ 4g/kg.",
+      "Adopt famous resistant cultivars like Phule Yashoda, Maldandi M 35-1, or Parbhani Moti.",
+      "Intercrop with Pigeon pea (Tur) in a 2:1 ratio to interrupt stem borer life cycles."
+    ]
+  },
+  {
+    "id": "pearl-millet-bajra",
+    "name": "Pearl Millet (Bajra)",
+    "localName": "बाजरी (Bajra)",
+    "scientificName": "Pennisetum glaucum",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif & Summer",
+    "maharashtraRegion": "Ahmednagar, Nashik, Dhule, Jalgaon, Beed, Aurangabad, Pune rain-shadow belts",
+    "description": "Climate-smart super-millet loaded with iron, zinc, and fiber. Thrives on light shallow soils under erratic rain-shadow monsoon belts.",
+    "optimalTemp": "28°C - 36°C (tolerates extreme heat up to 42°C)",
+    "waterRequirement": "250 - 350 mm.",
+    "soilPreference": "Well-drained sandy loam, gravelly or shallow black soils, pH 6.0 - 8.0.",
+    "growthStages": [
+      {
+        "stage": "Seedling & Tillering",
+        "days": "Days 1-25",
+        "description": "Rapid crown tillering in dry soil conditions."
+      },
+      {
+        "stage": "Stem Elongation & Flag Leaf",
+        "days": "Days 26-45",
+        "description": "Cylindrical bristled spike developing inside sheath."
+      },
+      {
+        "stage": "Protogynous Flowering & Anthesis",
+        "days": "Days 46-65",
+        "description": "White feathery stigmas emerge first followed by yellow anthers; wind-pollinated."
+      },
+      {
+        "stage": "Grain Hardening & Desiccation",
+        "days": "Days 66-85",
+        "description": "Dense greyish-pearl grains harden; ready for harvesting."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Downy Mildew / Green Ear (Sclerospora graminicola)",
+        "symptoms": "Floral spikes transform into twisted leafy green brush structures; chlorotic leaf stripes.",
+        "riskPeriod": "Humid overcast days with temperatures around 20-25°C."
+      },
+      {
+        "name": "Ergot (Claviceps fusiformis)",
+        "symptoms": "Pinkish sticky honey-like liquid oozes from spikelets, later hardening into dark sclerotia.",
+        "riskPeriod": "Rainy, overcast days during protogynous flowering."
+      },
+      {
+        "name": "Rust (Puccinia substriata)",
+        "symptoms": "Reddish-brown powdery pustules on both leaf surfaces causing premature drying.",
+        "riskPeriod": "Warm humid conditions after earhead emergence."
+      }
+    ],
+    "commonPests": [
+      "Shoot Fly",
+      "Stem Borer",
+      "Blister Beetle",
+      "Grasshopper"
+    ],
+    "generalPrevention": [
+      "Treat seed with Metalaxyl (Apron 35 SD) @ 6g/kg to immunize seedlings against downy mildew.",
+      "Dip seeds in 10% brine solution; skim off and destroy floating ergot sclerotia.",
+      "Plant bio-fortified high-yielding hybrids such as Dhanshakti, Phule Aadishakti, or GHB-538."
+    ]
+  },
+  {
+    "id": "maize-corn",
+    "name": "Maize (Corn)",
+    "localName": "मका (Maka)",
+    "scientificName": "Zea mays",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌽",
+    "season": "Kharif, Rabi & Summer",
+    "maharashtraRegion": "Khandesh (Jalgaon, Dhule), Nashik, Aurangabad, Kolhapur, Sangli",
+    "description": "High-yielding versatile cereal cultivated for grain, poultry feed, green fodder, and industrial starch. Has seen massive expansion in Khandesh and Marathwada.",
+    "optimalTemp": "21°C - 30°C",
+    "waterRequirement": "500 - 650 mm; critical water demand during tasseling and silking.",
+    "soilPreference": "Deep, fertile, well-aerated sandy loam to clay loam rich in organic matter, pH 6.0 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Emergence & Knee-High",
+        "days": "Days 1-30",
+        "description": "Crown roots anchor; whorl leaves unfold rapidly."
+      },
+      {
+        "stage": "Tasseling (Male Bloom)",
+        "days": "Days 35-55",
+        "description": "Terminal tassel emerges shedding millions of airborne pollen grains."
+      },
+      {
+        "stage": "Silking (Female Cob Bloom)",
+        "days": "Days 56-75",
+        "description": "Sticky silky strands emerge from ear shoot to capture falling pollen."
+      },
+      {
+        "stage": "Milk, Dough & Denting Maturity",
+        "days": "Days 76-105",
+        "description": "Kernels fill with starch; black layer forms at grain base at maturity."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Maydis Leaf Blight (Bipolaris maydis)",
+        "symptoms": "Elongated tan lesions with brown borders on leaf blades.",
+        "riskPeriod": "Warm, humid conditions (20-30°C) with intermittent rain."
+      },
+      {
+        "name": "Turcicum Leaf Blight (Exserohilum turcicum)",
+        "symptoms": "Long, elliptical grayish-green cigar-shaped necrotic lesions on foliage.",
+        "riskPeriod": "Cool, wet weather with heavy dews."
+      },
+      {
+        "name": "Common Rust (Puccinia sorghi)",
+        "symptoms": "Golden-brown powdery pustules covering both leaf surfaces.",
+        "riskPeriod": "Cool, humid weather (16-23°C)."
+      }
+    ],
+    "commonPests": [
+      "Fall Armyworm (Spodoptera frugiperda)",
+      "Stem Borer",
+      "Shoot Fly",
+      "Corn Earworm"
+    ],
+    "generalPrevention": [
+      "Install pheromone traps @ 10/ha to detect Fall Armyworm moths immediately upon emergence.",
+      "Apply neem-based Azadirachtin 1500 ppm or Bacillus thuringiensis (Bt) @ 2g/L into leaf whorls.",
+      "Ensure ridge-and-furrow planting to prevent root waterlogging."
+    ]
+  },
+  {
+    "id": "finger-millet-ragi",
+    "name": "Finger Millet (Ragi / Nachani)",
+    "localName": "नाचणी / रागी / नागली (Nachni / Nagli)",
+    "scientificName": "Eleusine coracana",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif",
+    "maharashtraRegion": "Konkan (Thane, Palghar, Raigad, Ratnagiri), Western Ghat hilly tribal belts of Nashik and Kolhapur",
+    "description": "Ancient climate-resilient superfood millet celebrated for extraordinary calcium and amino acid content. Staple grain of Konkan tribal farmers and nutritious bhakri.",
+    "optimalTemp": "20°C - 30°C",
+    "waterRequirement": "400 - 600 mm; tolerates high rainfall on sloped hill terrains without lodging.",
+    "soilPreference": "Red sandy loam, gravelly laterite, or shallow hill soils, pH 5.0 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Nursery & Seedling",
+        "days": "Days 1-25",
+        "description": "Tiny seeds raised on raised beds; transplanted to hill slopes."
+      },
+      {
+        "stage": "Tillering & Vegetative",
+        "days": "Days 26-55",
+        "description": "Dense fibrous root system establishes in rocky hillside soil."
+      },
+      {
+        "stage": "Earhead Emergence (Finger Formation)",
+        "days": "Days 56-80",
+        "description": "Digit-like whorl of 4 to 8 spicate fingers unfolds."
+      },
+      {
+        "stage": "Grain Maturation & Drying",
+        "days": "Days 81-115",
+        "description": "Seeds turn dark brown/russet; cut with sickle at full maturity."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Ragi Blast (Pyricularia grisea)",
+        "symptoms": "Spindle-shaped lesions on leaf; choking black lesions on neck and fingers causing severe yield loss.",
+        "riskPeriod": "Cloudy, humid weather in Western Ghat hills during monsoon."
+      },
+      {
+        "name": "Foot Rot / Wilt (Sclerotium rolfsii)",
+        "symptoms": "White mycelial fan at collar region with mustard-seed-like sclerotia.",
+        "riskPeriod": "Warm soil with moisture stagnation."
+      }
+    ],
+    "commonPests": [
+      "Ragi Stem Borer",
+      "Hairy Caterpillar",
+      "Aphids",
+      "Grasshoppers"
+    ],
+    "generalPrevention": [
+      "Use blast-tolerant university varieties like Phule Nachani, Dapoli-1, or GPU-28.",
+      "Treat seed with Pseudomonas fluorescens @ 10g/kg prior to nursery sowing."
+    ]
+  },
+  {
+    "id": "foxtail-millet-rala",
+    "name": "Foxtail Millet",
+    "localName": "राळा / कांगणी (Rala / Kangni)",
+    "scientificName": "Setaria italica",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif",
+    "maharashtraRegion": "Marathwada, Solapur, Ahmednagar drylands, Vidarbha",
+    "description": "Fast-maturing, drought-tolerant nutrient-rich ancient millet with low glycemic index. Used for wholesome porridge, upma, and flour.",
+    "optimalTemp": "22°C - 32°C",
+    "waterRequirement": "250 - 350 mm; matures in just 70-85 days.",
+    "soilPreference": "Light sandy loam to shallow black soils, well-draining.",
+    "growthStages": [
+      {
+        "stage": "Seedling",
+        "days": "Days 1-20",
+        "description": "Quick emergence."
+      },
+      {
+        "stage": "Tillering",
+        "days": "Days 21-45",
+        "description": "Compact bristled panicles forming."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 46-65",
+        "description": "Yellowish cylindrical drooping bristly spikes bloom."
+      },
+      {
+        "stage": "Harvest",
+        "days": "Days 66-85",
+        "description": "Grains turn golden-yellow."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Blast",
+        "symptoms": "Brown circular spots on leaves and panicles.",
+        "riskPeriod": "Overcast skies and sustained humidity."
+      }
+    ],
+    "commonPests": [
+      "Shoot Fly",
+      "Armyworm"
+    ],
+    "generalPrevention": [
+      "Seed treatment with Thiram @ 3g/kg."
+    ]
+  },
+  {
+    "id": "barnyard-millet-bhagar",
+    "name": "Barnyard Millet (Bhagar / Varai)",
+    "localName": "वरई / भगर / सावा (Varai / Bhagar)",
+    "scientificName": "Echinochloa frumentacea",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif",
+    "maharashtraRegion": "Nashik (Trimbak), Konkan, tribal belt of Pune and Ahmednagar hills",
+    "description": "Fastest-growing grain crop on earth (matures in 60 days). The revered staple grain for fasting (Upwas Bhagar) across Maharashtra.",
+    "optimalTemp": "20°C - 30°C",
+    "waterRequirement": "300 - 450 mm; withstands severe drought as well as seasonal waterlogging.",
+    "soilPreference": "Marginal, gravelly hill slopes and poor shallow soils, pH 5.5 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Emergence",
+        "days": "Days 1-20",
+        "description": "Rapid tillering."
+      },
+      {
+        "stage": "Booting",
+        "days": "Days 21-40",
+        "description": "Pyramidal panicle emerges."
+      },
+      {
+        "stage": "Harvest",
+        "days": "Days 41-65",
+        "description": "Milky grains harden."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Smut",
+        "symptoms": "Ovaries swollen into gall-like masses.",
+        "riskPeriod": "Cool, wet mornings."
+      }
+    ],
+    "commonPests": [
+      "Shoot Fly",
+      "Stem Borer"
+    ],
+    "generalPrevention": [
+      "Seed treatment with bio-agent Trichoderma viride."
+    ]
+  },
+  {
+    "id": "little-millet-kutki",
+    "name": "Little Millet",
+    "localName": "कुटकी / सावा (Kutki)",
+    "scientificName": "Panicum sumatrense",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif",
+    "maharashtraRegion": "Tribal areas of Nandurbar, Gadchiroli, Chandrapur, Thane",
+    "description": "Nutritious minor millet that grows on impoverished soils where almost no other cereal can yield.",
+    "optimalTemp": "20°C - 32°C",
+    "waterRequirement": "250 - 350 mm.",
+    "soilPreference": "Shallow gravelly red or lateritic soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-30",
+        "description": "Fibrous rooting."
+      },
+      {
+        "stage": "Heading",
+        "days": "Days 31-55",
+        "description": "Loose open panicles."
+      },
+      {
+        "stage": "Harvest",
+        "days": "Days 56-80",
+        "description": "Seeds turn straw-colored."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Rust",
+        "symptoms": "Small orange spots.",
+        "riskPeriod": "Post-monsoon humidity."
+      }
+    ],
+    "commonPests": [
+      "Shoot Fly",
+      "Spittle Bug"
+    ],
+    "generalPrevention": [
+      "Sow with first soaking monsoon rains."
+    ]
+  },
+  {
+    "id": "kodo-millet",
+    "name": "Kodo Millet",
+    "localName": "कोद्रा / कोदो (Kodra / Kodo)",
+    "scientificName": "Paspalum scrobiculatum",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif",
+    "maharashtraRegion": "Konkan hills, Vidarbha forest belts, Satpura ranges",
+    "description": "Extremely hardy ancient millet rich in polyphenols and dietary fiber, cultivated since Indus Valley times.",
+    "optimalTemp": "25°C - 35°C",
+    "waterRequirement": "300 - 450 mm.",
+    "soilPreference": "Poor stony soils with minimal nutrition.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-35",
+        "description": "Prostrate tillering."
+      },
+      {
+        "stage": "Panicle",
+        "days": "Days 36-70",
+        "description": "Racemes with dark brown seeds."
+      },
+      {
+        "stage": "Harvest",
+        "days": "Days 71-105",
+        "description": "Tough seed coat hardens."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Head Smut",
+        "symptoms": "Dark powdery grains.",
+        "riskPeriod": "High rainfall."
+      }
+    ],
+    "commonPests": [
+      "Grasshopper",
+      "Armyworm"
+    ],
+    "generalPrevention": [
+      "Use certified seed."
+    ]
+  },
+  {
+    "id": "proso-millet-vari",
+    "name": "Proso Millet",
+    "localName": "वरी / चीना (Vari / Cheena)",
+    "scientificName": "Panicum miliaceum",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif & Summer",
+    "maharashtraRegion": "Solapur, Nashik, Marathwada, Ahmednagar",
+    "description": "Matures in only 60 to 75 days with lowest water requirement of any cereal grain.",
+    "optimalTemp": "20°C - 30°C",
+    "waterRequirement": "200 - 300 mm.",
+    "soilPreference": "Well-drained light loams.",
+    "growthStages": [
+      {
+        "stage": "Tillering",
+        "days": "Days 1-25",
+        "description": "Fast canopy spread."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 26-50",
+        "description": "Drooping open panicle bloom."
+      },
+      {
+        "stage": "Harvest",
+        "days": "Days 51-70",
+        "description": "Golden yellow grains harvested."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Leaf Smut",
+        "symptoms": "Sooty streaks on leaf.",
+        "riskPeriod": "Warm damp spells."
+      }
+    ],
+    "commonPests": [
+      "Stem Borer"
+    ],
+    "generalPrevention": [
+      "Timely harvesting to prevent lodging."
+    ]
+  },
+  {
+    "id": "barley-jau",
+    "name": "Barley",
+    "localName": "जव / सातू (Jau / Satu)",
+    "scientificName": "Hordeum vulgare",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Rabi (Winter)",
+    "maharashtraRegion": "Western Maharashtra, Marathwada, North Maharashtra",
+    "description": "Cool-season cereal used for nutritious sattu flour, malt, beverage production, and animal feed. Highly salt-tolerant.",
+    "optimalTemp": "12°C - 22°C",
+    "waterRequirement": "250 - 350 mm.",
+    "soilPreference": "Sandy to clay loam, tolerates salinity.",
+    "growthStages": [
+      {
+        "stage": "Tillering",
+        "days": "Days 1-30",
+        "description": "Stiff erect tillers develop."
+      },
+      {
+        "stage": "Heading",
+        "days": "Days 31-65",
+        "description": "Bearded awned spikes emerge."
+      },
+      {
+        "stage": "Ripening",
+        "days": "Days 66-100",
+        "description": "Golden straw and grain harvest."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Covered Smut",
+        "symptoms": "Persistent membrane enclosing black spore mass.",
+        "riskPeriod": "Seed infection."
+      }
+    ],
+    "commonPests": [
+      "Aphid",
+      "Armyworm"
+    ],
+    "generalPrevention": [
+      "Seed treatment with Vitavax @ 2.5g/kg."
+    ]
+  },
+  {
+    "id": "oats",
+    "name": "Oats",
+    "localName": "ओट्स / जई (Jaye)",
+    "scientificName": "Avena sativa",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Rabi",
+    "maharashtraRegion": "Pune, Nashik, Satara dairy tracts (high fodder value)",
+    "description": "Premium breakfast cereal and succulent dairy green fodder rich in beta-glucan and minerals.",
+    "optimalTemp": "15°C - 25°C",
+    "waterRequirement": "350 - 450 mm.",
+    "soilPreference": "Well-drained loam with moderate fertility.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-40",
+        "description": "Leafy succulent shoots."
+      },
+      {
+        "stage": "Panicle",
+        "days": "Days 41-75",
+        "description": "Loose spreading panicles."
+      },
+      {
+        "stage": "Maturity",
+        "days": "Days 76-110",
+        "description": "Grain filling for milling or forage cut."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Crown Rust",
+        "symptoms": "Orange pustules on upper leaves.",
+        "riskPeriod": "Mild humid winter."
+      }
+    ],
+    "commonPests": [
+      "Aphids",
+      "Armyworm"
+    ],
+    "generalPrevention": [
+      "Cut early at 50% flowering for highest protein fodder."
+    ]
+  },
+  {
+    "id": "basmati-rice",
+    "name": "Basmati Rice",
+    "localName": "बासमती तांदूळ (Basmati Dhan)",
+    "scientificName": "Oryza sativa subsp. indica",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif",
+    "maharashtraRegion": "Punjab, Haryana, Western UP, Tarai belt of India",
+    "description": "The world-famous long-grain aromatic rice protected under Geographical Indication.",
+    "optimalTemp": "20°C - 30°C",
+    "waterRequirement": "1,200 - 1,500 mm.",
+    "soilPreference": "Deep alluvial clay loam.",
+    "growthStages": [
+      {
+        "stage": "Tillering",
+        "days": "Days 1-50",
+        "description": "Slender aromatic tillers."
+      },
+      {
+        "stage": "Panicle",
+        "days": "Days 51-90",
+        "description": "Fragrant panicles with long slender spikelets."
+      },
+      {
+        "stage": "Maturity",
+        "days": "Days 91-135",
+        "description": "Grain elongation and aroma accumulation."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Bacterial Blight",
+        "symptoms": "Water-soaked wavy leaf margins.",
+        "riskPeriod": "Heavy rain."
+      }
+    ],
+    "commonPests": [
+      "Stem Borer",
+      "Leaf Folder"
+    ],
+    "generalPrevention": [
+      "Pusa Basmati 1121, 1509 varieties."
+    ]
+  },
+  {
+    "id": "indrayani-rice",
+    "name": "Indrayani Fragrant Rice",
+    "localName": "इंद्रायणी तांदूळ (Indrayani Rice)",
+    "scientificName": "Oryza sativa (Maval)",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif",
+    "maharashtraRegion": "Maval (Pune), Kolhapur, Satara, Nashik Western Ghats",
+    "description": "Renowned fragrant, sticky medium-slender rice created by MPKV Rahuri, the heart of Maharashtrian cuisine.",
+    "optimalTemp": "22°C - 30°C",
+    "waterRequirement": "1,100 - 1,300 mm.",
+    "soilPreference": "Ghat valley fertile loams.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-50",
+        "description": "Dense tillers with characteristic aroma."
+      },
+      {
+        "stage": "Panicle",
+        "days": "Days 51-85",
+        "description": "Full drooping fragrant panicles."
+      },
+      {
+        "stage": "Harvest",
+        "days": "Days 86-125",
+        "description": "Harvest when 85% grains turn straw golden."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Blast",
+        "symptoms": "Diamond lesions.",
+        "riskPeriod": "Overcast monsoon weeks."
+      }
+    ],
+    "commonPests": [
+      "Stem Borer"
+    ],
+    "generalPrevention": [
+      "Adopt certified breeder seeds from MPKV."
+    ]
+  },
+  {
+    "id": "ambemohar-rice",
+    "name": "Ambemohar Traditional Rice",
+    "localName": "आंबेमोहर तांदूळ (Ambemohar Rice)",
+    "scientificName": "Oryza sativa (GI)",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Kharif",
+    "maharashtraRegion": "Bhor, Mulshi, Velhe, Maval foothills of Pune district",
+    "description": "Traditional GI-tagged scented short-grain rice with aroma reminiscent of mango blossoms (आंबा मोहोर). Ideal for baby food, khichdi, and kheer.",
+    "optimalTemp": "20°C - 28°C",
+    "waterRequirement": "1,000 - 1,200 mm.",
+    "soilPreference": "High altitude red-lateritic valley soils.",
+    "growthStages": [
+      {
+        "stage": "Tillering",
+        "days": "Days 1-55",
+        "description": "Slender slow vegetative growth."
+      },
+      {
+        "stage": "Heading",
+        "days": "Days 56-95",
+        "description": "Intense mango floral fragrance during morning anthesis."
+      },
+      {
+        "stage": "Harvest",
+        "days": "Days 96-140",
+        "description": "Fragrant short grains harvested."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Leaf Blast",
+        "symptoms": "Spindle-shaped lesions.",
+        "riskPeriod": "Cool, misty mountain mornings."
+      }
+    ],
+    "commonPests": [
+      "Stem Borer"
+    ],
+    "generalPrevention": [
+      "Maintain pure organic cultivation."
+    ]
+  },
+  {
+    "id": "rye",
+    "name": "Rye",
+    "localName": "राई / रई (Rye grain)",
+    "scientificName": "Secale cereale",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Rabi",
+    "maharashtraRegion": "Himalayan foothills and experimental cool zones",
+    "description": "Cold-hardy grain used for artisan bread, crispbread, and nutrient-dense cover crops.",
+    "optimalTemp": "10°C - 20°C",
+    "waterRequirement": "300 - 400 mm.",
+    "soilPreference": "Sandy and acidic soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-45",
+        "description": "Deep root penetration."
+      },
+      {
+        "stage": "Heading",
+        "days": "Days 46-80",
+        "description": "Long awned spikes."
+      },
+      {
+        "stage": "Maturity",
+        "days": "Days 81-120",
+        "description": "Hard slate-colored grains."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Ergot",
+        "symptoms": "Purple-black sclerotia.",
+        "riskPeriod": "Wet flowering."
+      }
+    ],
+    "commonPests": [
+      "Stem Sawfly"
+    ],
+    "generalPrevention": [
+      "Deep plowing to bury ergot sclerotia."
+    ]
+  },
+  {
+    "id": "durum-wheat",
+    "name": "Durum Wheat (Bansi Wheat)",
+    "localName": "बन्सी / मालवी / कठिया गहू (Durum Wheat)",
+    "scientificName": "Triticum durum",
+    "category": "Cereals & Millets",
+    "avatarEmoji": "🌾",
+    "season": "Rabi",
+    "maharashtraRegion": "Marathwada, Vidarbha, Western Maharashtra black soils",
+    "description": "Hard vitreous amber grain with high protein and gluten strength, preferred for semolina (suji/rava), pasta, and daliya.",
+    "optimalTemp": "15°C - 28°C",
+    "waterRequirement": "300 - 450 mm.",
+    "soilPreference": "Deep black clay soils (Vertisols).",
+    "growthStages": [
+      {
+        "stage": "Tillering",
+        "days": "Days 1-30",
+        "description": "Sturdy thick stems."
+      },
+      {
+        "stage": "Heading",
+        "days": "Days 31-65",
+        "description": "Heavy dense bearded heads."
+      },
+      {
+        "stage": "Maturity",
+        "days": "Days 66-105",
+        "description": "Hard translucent amber kernels."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Stem Rust",
+        "symptoms": "Dark brown pustules.",
+        "riskPeriod": "Warm winter spells."
+      }
+    ],
+    "commonPests": [
+      "Termites"
+    ],
+    "generalPrevention": [
+      "Use MACS-2846, AKDW-2997-16 (Sharada) resistant varieties."
+    ]
+  },
+  {
+    "id": "pigeon-pea-tur",
+    "name": "Pigeon Pea (Tur / Arhar)",
+    "localName": "तूर / अरहर (Tur / Arhar)",
+    "scientificName": "Cajanus cajan",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Kharif",
+    "maharashtraRegion": "Marathwada (Latur is Asia's largest Tur dal trading hub), Vidarbha (Akola, Amravati), Khandesh",
+    "description": "The foundation of Indian dal. Deep-rooted legume fixing nitrogen and enriching black soils; grown predominantly as intercrop with Soybean or Cotton.",
+    "optimalTemp": "25°C - 35°C",
+    "waterRequirement": "600 - 800 mm; drought-hardy due to deep taproot.",
+    "soilPreference": "Deep, well-drained black cotton soil or loam, pH 6.5 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Seedling & Branching",
+        "days": "Days 1-45",
+        "description": "Slow early growth while deep taproot establishes."
+      },
+      {
+        "stage": "Canopy & Flowering",
+        "days": "Days 46-100",
+        "description": "Profuse yellow blooms attract pollinators."
+      },
+      {
+        "stage": "Pod Formation & Filling",
+        "days": "Days 101-140",
+        "description": "Green pods develop; pod borer vulnerable stage."
+      },
+      {
+        "stage": "Maturity & Harvest",
+        "days": "Days 141-180",
+        "description": "Pods turn dry brown; harvested with threshers."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Fusarium Wilt (Fusarium udum)",
+        "symptoms": "Gradual wilting, purple bands on stems, vascular browning when stem is split.",
+        "riskPeriod": "Flowering stage during soil moisture fluctuations."
+      },
+      {
+        "name": "Sterility Mosaic Disease (SMD)",
+        "symptoms": "Excessive bushiness, pale green mosaic leaves, complete lack of flowers; transmitted by eriophyid mites.",
+        "riskPeriod": "Dense canopies with high mite vector populations."
+      }
+    ],
+    "commonPests": [
+      "Gram Pod Borer (Helicoverpa armigera)",
+      "Plume Moth",
+      "Pod Fly (Melanagromyza obtusa)"
+    ],
+    "generalPrevention": [
+      "Use wilt and SMD-resistant varieties like BSMR-736, BDN-711, or Maruti (ICP-8863).",
+      "Seed treatment with Trichoderma viride @ 4g/kg + Rhizobium culture."
+    ]
+  },
+  {
+    "id": "chickpea-chana",
+    "name": "Chickpea (Bengal Gram / Chana)",
+    "localName": "हरभरा / चणा (Harbhara / Chana)",
+    "scientificName": "Cicer arietinum",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Rabi (Winter)",
+    "maharashtraRegion": "Marathwada (Latur, Osmanabad), Western Maharashtra (Ahmednagar, Solapur), Vidarbha",
+    "description": "Premier winter pulse crop of Maharashtra. Consumed as fresh green pods (Hurda/Harbhara ghaati), roasted gram, besan flour, and dry dal.",
+    "optimalTemp": "15°C - 25°C (cool nights, dry sunny days)",
+    "waterRequirement": "250 - 350 mm; requires 1-2 protective irrigations.",
+    "soilPreference": "Deep, moisture-retentive black cotton soil with pH 6.0 - 8.0.",
+    "growthStages": [
+      {
+        "stage": "Emergence & Nipping",
+        "days": "Days 1-25",
+        "description": "Terminal bud nipping done at 25-30 days to stimulate heavy lateral branching."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 26-55",
+        "description": "Delicate pinkish or white flowers appear in leaf axils."
+      },
+      {
+        "stage": "Pod Development",
+        "days": "Days 56-85",
+        "description": "Pods swell containing 1-2 plump seeds."
+      },
+      {
+        "stage": "Maturity",
+        "days": "Days 86-110",
+        "description": "Foliage turns golden brown; grains harden."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Fusarium Wilt (Fusarium oxysporum f. sp. ciceris)",
+        "symptoms": "Leaves drop, roots exhibit internal dark brown vascular discoloration.",
+        "riskPeriod": "Warm early winter soils or mid-season moisture stress."
+      },
+      {
+        "name": "Ascochyta Blight",
+        "symptoms": "Circular lesions with concentric rings of pycnidia on leaves, stems, and pods.",
+        "riskPeriod": "Cool, wet, cloudy winter spells."
+      }
+    ],
+    "commonPests": [
+      "Gram Pod Borer (Helicoverpa armigera)",
+      "Cutworms",
+      "Aphids"
+    ],
+    "generalPrevention": [
+      "Plant wilt-resistant varieties like Digvijay, Vijay, Phule Vikram, or Jaki-9218.",
+      "Perform terminal nipping at 30 days to double pod-bearing branches."
+    ]
+  },
+  {
+    "id": "green-gram-moong",
+    "name": "Green Gram (Moong)",
+    "localName": "मूग (Moong)",
+    "scientificName": "Vigna radiata",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🌱",
+    "season": "Kharif & Summer",
+    "maharashtraRegion": "Marathwada, Vidarbha, Jalgaon, Dhule, Ahmednagar",
+    "description": "Quick-maturing (60-70 days) protein-rich pulse crop ideal for crop rotations and soil health regeneration.",
+    "optimalTemp": "25°C - 35°C",
+    "waterRequirement": "300 - 400 mm.",
+    "soilPreference": "Well-drained loam to clay loam.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-25",
+        "description": "Rapid leaf canopy and root nodulation."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 26-45",
+        "description": "Yellow blossoms in clusters."
+      },
+      {
+        "stage": "Pod Maturity",
+        "days": "Days 46-65",
+        "description": "Black cylindrical pods ready for picking."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Yellow Mosaic Virus (MYMV)",
+        "symptoms": "Irregular yellow and green patches on leaves; transmitted by whiteflies.",
+        "riskPeriod": "Hot dry weather with high whitefly activity."
+      },
+      {
+        "name": "Powdery Mildew",
+        "symptoms": "White powdery coating on foliage.",
+        "riskPeriod": "Humid mornings."
+      }
+    ],
+    "commonPests": [
+      "Whitefly",
+      "Thrips",
+      "Pod Borer"
+    ],
+    "generalPrevention": [
+      "Grow MYMV-resistant varieties (BM-2002-1, BM-2003-2, Vaibhav).",
+      "Seed treatment with Imidacloprid @ 5g/kg."
+    ]
+  },
+  {
+    "id": "black-gram-urad",
+    "name": "Black Gram (Urad)",
+    "localName": "उडीद (Udid / Urad)",
+    "scientificName": "Vigna mungo",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Kharif & Summer",
+    "maharashtraRegion": "Vidarbha (Nagpur, Wardha), Marathwada (Nanded, Latur), Khandesh",
+    "description": "Indispensable pulse in Indian culinary traditions for papad, idli, vada, and dal makhani.",
+    "optimalTemp": "25°C - 35°C",
+    "waterRequirement": "350 - 450 mm.",
+    "soilPreference": "Medium to heavy black cotton soils with good drainage.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-25",
+        "description": "Dense hairy stems and trifoliate leaves."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 26-45",
+        "description": "Bright yellow flowers."
+      },
+      {
+        "stage": "Pod Ripening",
+        "days": "Days 46-70",
+        "description": "Hairy pods turn black when ripe."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Yellow Mosaic Virus",
+        "symptoms": "Bright golden yellow mottling.",
+        "riskPeriod": "Whitefly outbreaks."
+      },
+      {
+        "name": "Cercospora Leaf Spot",
+        "symptoms": "Brown spots with reddish margins.",
+        "riskPeriod": "Warm rainy periods."
+      }
+    ],
+    "commonPests": [
+      "Whitefly",
+      "Pod Borer",
+      "Stem Fly"
+    ],
+    "generalPrevention": [
+      "Use resistant varieties like TAU-1, TPU-4, AKU-15.",
+      "Seed treatment with Trichoderma."
+    ]
+  },
+  {
+    "id": "soybean",
+    "name": "Soybean",
+    "localName": "सोयाबीन (Soybean)",
+    "scientificName": "Glycine max",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🌱",
+    "season": "Kharif",
+    "maharashtraRegion": "Marathwada (Latur, Nanded), Vidarbha (Amravati, Akola, Yavatmal, Nagpur), Western Maharashtra (Kolhapur, Sangli)",
+    "description": "The golden bean that revolutionized Maharashtra agriculture. Miracle crop delivering 40% protein and 20% edible oil, supporting millions of rural livelihoods.",
+    "optimalTemp": "24°C - 30°C",
+    "waterRequirement": "450 - 650 mm; highly sensitive to dry spells at pod-filling.",
+    "soilPreference": "Deep, fertile well-drained black cotton soil, pH 6.5 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Germination & Vegetative (V1-V4)",
+        "days": "Days 1-30",
+        "description": "Emergence, unifoliate and trifoliate leaf expansion, root nodulation with Bradyrhizobium."
+      },
+      {
+        "stage": "Flowering (R1-R2)",
+        "days": "Days 31-50",
+        "description": "Tiny purple or white flowers open in leaf axils."
+      },
+      {
+        "stage": "Pod Development (R3-R4)",
+        "days": "Days 51-70",
+        "description": "Pods elongate; critical moisture-sensitive phase."
+      },
+      {
+        "stage": "Seed Filling & Senescence (R5-R8)",
+        "days": "Days 71-100",
+        "description": "Leaves yellow and drop; pods turn golden brown containing 2-3 round seeds."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Soybean Rust (Phakopsora pachyrhizi)",
+        "symptoms": "Tiny brown to reddish-brown lesions with erupting volcanic pustules on leaf undersides.",
+        "riskPeriod": "Extended cloudiness, high relative humidity (>85%), temp 18-26°C."
+      },
+      {
+        "name": "Charcoal Rot (Macrophomina phaseolina)",
+        "symptoms": "Sub-epidermal black specks (microsclerotia) causing premature plant death and stem splitting.",
+        "riskPeriod": "Post-flowering drought accompanied by high soil temp (>33°C)."
+      },
+      {
+        "name": "Collar Rot / Root Rot (Sclerotium rolfsii)",
+        "symptoms": "White fan-shaped fungal mycelium with brown mustard-like seeds at soil line.",
+        "riskPeriod": "Waterlogged soil conditions during seedling stage."
+      }
+    ],
+    "commonPests": [
+      "Girdle Beetle (Obereopsis brevis)",
+      "Spodoptera litura (Tobacco Caterpillar)",
+      "Semilooper",
+      "Gram Pod Borer"
+    ],
+    "generalPrevention": [
+      "Use high-yielding university varieties: JS-335, JS-9305, Phule Sangam (KDS-726), Phule Kimaya (KDS-753).",
+      "Inoculate seed with Bradyrhizobium japonicum + PSB culture @ 250g per 10kg seed."
+    ]
+  },
+  {
+    "id": "moth-bean-matki",
+    "name": "Moth Bean (Matki)",
+    "localName": "मटकी (Matki / Moth)",
+    "scientificName": "Vigna aconitifolia",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Kharif",
+    "maharashtraRegion": "Ahmednagar, Solapur, Beed, Dhule, Jalgaon dry zones",
+    "description": "Super-drought hardy pulse; soul of Maharashtra's beloved breakfast dish 'Misal Pav' when sprouted.",
+    "optimalTemp": "25°C - 38°C",
+    "waterRequirement": "200 - 300 mm; survives severe dry spells.",
+    "soilPreference": "Light, sandy, gravelly marginal soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-30",
+        "description": "Prostrate spreading ground cover."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 31-50",
+        "description": "Yellow blossoms."
+      },
+      {
+        "stage": "Pod Ripening",
+        "days": "Days 51-75",
+        "description": "Slender pods turn brown."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Yellow Mosaic Virus",
+        "symptoms": "Yellowing of leaves.",
+        "riskPeriod": "Hot dry weather."
+      }
+    ],
+    "commonPests": [
+      "Jassids",
+      "Whitefly"
+    ],
+    "generalPrevention": [
+      "Use improved varieties like Phule Matki-15, RMO-40."
+    ]
+  },
+  {
+    "id": "cowpea-chawli",
+    "name": "Cowpea (Chawli / Lobia)",
+    "localName": "चवळी (Chawli / Lobia)",
+    "scientificName": "Vigna unguiculata",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Kharif & Summer",
+    "maharashtraRegion": "Konkan, Western Maharashtra, Marathwada, Vidarbha",
+    "description": "Versatile dual-purpose crop grown for tender green vegetable pods, nutritious dry pulse, and green manure.",
+    "optimalTemp": "24°C - 34°C",
+    "waterRequirement": "350 - 450 mm.",
+    "soilPreference": "Adaptable to poor acid or alkaline soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-30",
+        "description": "Vigorous twining or bush growth."
+      },
+      {
+        "stage": "Pod Setting",
+        "days": "Days 31-55",
+        "description": "Long green hanging pods."
+      },
+      {
+        "stage": "Maturity",
+        "days": "Days 56-85",
+        "description": "Dry grain pods harvested."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Anthracnose",
+        "symptoms": "Sunken brown lesions on pods.",
+        "riskPeriod": "Continuous rain."
+      }
+    ],
+    "commonPests": [
+      "Aphids (Aphis craccivora)",
+      "Pod Borer"
+    ],
+    "generalPrevention": [
+      "Use Phule CP-05040, Konkan Safed varieties."
+    ]
+  },
+  {
+    "id": "lentil-masoor",
+    "name": "Lentil (Masoor)",
+    "localName": "मसूर (Masoor)",
+    "scientificName": "Lens culinaris",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Rabi (Winter)",
+    "maharashtraRegion": "Vidarbha (Nagpur, Bhandara), Marathwada, Central India",
+    "description": "Ancient quick-cooking protein-rich pulse cultivated in residual soil moisture after paddy.",
+    "optimalTemp": "15°C - 24°C",
+    "waterRequirement": "200 - 300 mm.",
+    "soilPreference": "Well-drained clay loam or alluvial soils.",
+    "growthStages": [
+      {
+        "stage": "Seedling",
+        "days": "Days 1-25",
+        "description": "Delicate pinnate leaves."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 26-55",
+        "description": "Small bluish-white blossoms."
+      },
+      {
+        "stage": "Pod Filling & Harvest",
+        "days": "Days 56-90",
+        "description": "Flat pods holding 1-2 lens-shaped seeds."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Rust",
+        "symptoms": "Uredial pustules on leaves.",
+        "riskPeriod": "Cool humid conditions."
+      }
+    ],
+    "commonPests": [
+      "Pod Borer",
+      "Aphids"
+    ],
+    "generalPrevention": [
+      "Seed treatment with Trichoderma.",
+      "Use KLS-218, JL-3 varieties."
+    ]
+  },
+  {
+    "id": "field-pea-vatana",
+    "name": "Field Pea (Dry Vatana / Green Peas)",
+    "localName": "वाटाणा (Vatana / Matar)",
+    "scientificName": "Pisum sativum",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫛",
+    "season": "Rabi",
+    "maharashtraRegion": "Nashik, Pune, Satara, Ahmednagar cool winter pockets",
+    "description": "Grown for sweet tender fresh green peas and sun-dried white/green vatana for famous street foods and curries.",
+    "optimalTemp": "13°C - 20°C",
+    "waterRequirement": "300 - 400 mm.",
+    "soilPreference": "Well-drained fertile loamy soil, pH 6.0 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-30",
+        "description": "Tendril-bearing climbing foliage."
+      },
+      {
+        "stage": "Blossom & Podding",
+        "days": "Days 31-60",
+        "description": "White butterfly-like flowers; sweet pods swell."
+      },
+      {
+        "stage": "Harvest",
+        "days": "Days 61-90",
+        "description": "Green pods handpicked or left to dry."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Powdery Mildew (Erysiphe pisi)",
+        "symptoms": "White powdery coating covering leaves, stems, and pods.",
+        "riskPeriod": "Dry warm days and cool humid nights."
+      }
+    ],
+    "commonPests": [
+      "Pea Pod Borer",
+      "Pea Aphid"
+    ],
+    "generalPrevention": [
+      "Grow powdery mildew resistant varieties (Arkel, Azad P-1, Phule Priya)."
+    ]
+  },
+  {
+    "id": "horse-gram-kulthi",
+    "name": "Horse Gram (Kulthi / Kulith)",
+    "localName": "कुळीथ / हुलगा (Kulith / Hulga)",
+    "scientificName": "Macrotyloma uniflorum",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Kharif & Late Kharif",
+    "maharashtraRegion": "Konkan (Ratnagiri, Sindhudurg), Western Ghats, Solapur, Ahmednagar",
+    "description": "Nutritional powerhouse known for dissolving kidney stones and making soul-warming Konkani Pithla and soup.",
+    "optimalTemp": "20°C - 32°C",
+    "waterRequirement": "200 - 300 mm; extreme drought resistance.",
+    "soilPreference": "Gravelly lateritic, red or impoverished hill soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-35",
+        "description": "Dense low-creeping vine."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 36-65",
+        "description": "Small yellow blossoms."
+      },
+      {
+        "stage": "Maturity",
+        "days": "Days 66-95",
+        "description": "Curved dry pods with flat hard seeds."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Dry Root Rot",
+        "symptoms": "Bark shredded at collar.",
+        "riskPeriod": "Extreme heat."
+      }
+    ],
+    "commonPests": [
+      "Pod Borer"
+    ],
+    "generalPrevention": [
+      "Use Dapoli-1, Sina varieties."
+    ]
+  },
+  {
+    "id": "rajma-kidney-beans",
+    "name": "Kidney Bean (Rajma)",
+    "localName": "राजमा (Rajma)",
+    "scientificName": "Phaseolus vulgaris",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Rabi in Maharashtra / Kharif in Hills",
+    "maharashtraRegion": "Western Maharashtra (Pune, Satara, Ahmednagar irrigated winter tracts), Jammu & Kashmir, Himachal",
+    "description": "High-value protein pulse yielding plump red kidney beans with rich savory flavor.",
+    "optimalTemp": "15°C - 25°C",
+    "waterRequirement": "400 - 500 mm.",
+    "soilPreference": "Rich, fertile loamy soil with excellent drainage.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-30",
+        "description": "Bush or pole type upright stems."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 31-55",
+        "description": "White or purple blooms."
+      },
+      {
+        "stage": "Pod Maturity",
+        "days": "Days 56-95",
+        "description": "Large kidney-shaped seeds fill."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Bean Anthracnose",
+        "symptoms": "Sunken dark cankers on pods.",
+        "riskPeriod": "Wet humid spells."
+      }
+    ],
+    "commonPests": [
+      "Aphid",
+      "Pod Borer"
+    ],
+    "generalPrevention": [
+      "Apply 100-120 kg N/ha since Rajma lacks active root nodulation."
+    ]
+  },
+  {
+    "id": "cluster-bean-guar",
+    "name": "Cluster Bean (Guar)",
+    "localName": "गवार (Gawar / Guar)",
+    "scientificName": "Cyamopsis tetragonoloba",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫛",
+    "season": "Kharif & Summer",
+    "maharashtraRegion": "Nashik, Pune, Ahmednagar, Marathwada, Rajasthan border tracts",
+    "description": "Drought-hardy legume grown for delicious green vegetable clusters and industrial guar gum (galactomannan).",
+    "optimalTemp": "26°C - 35°C",
+    "waterRequirement": "250 - 350 mm.",
+    "soilPreference": "Sandy to loamy well-drained soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-30",
+        "description": "Stiff upright branching."
+      },
+      {
+        "stage": "Clustering",
+        "days": "Days 31-55",
+        "description": "Pods form in tight clusters at leaf nodes."
+      },
+      {
+        "stage": "Maturity",
+        "days": "Days 56-90",
+        "description": "Tender vegetable pickings or seed drying."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Bacterial Blight",
+        "symptoms": "V-shaped brown lesions on leaf margins.",
+        "riskPeriod": "Monsoon humidity."
+      }
+    ],
+    "commonPests": [
+      "Jassids",
+      "Aphids"
+    ],
+    "generalPrevention": [
+      "Grow Pusa Navbahar, Phule Gaurav."
+    ]
+  },
+  {
+    "id": "broad-bean-fava",
+    "name": "Broad Bean (Fava Bean)",
+    "localName": "घेवडा / बाकला (Bakla / Broad Bean)",
+    "scientificName": "Vicia faba",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Rabi",
+    "maharashtraRegion": "Mahabaleshwar, Pune, Western Ghat plateaus, North India",
+    "description": "Cool-season ancient legume producing large succulent nutrient-rich beans in thick leathery pods.",
+    "optimalTemp": "12°C - 20°C",
+    "waterRequirement": "350 - 450 mm.",
+    "soilPreference": "Heavy fertile clay loams.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-35",
+        "description": "Square hollow stems and glaucous leaves."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 36-65",
+        "description": "White flowers with dark blotches."
+      },
+      {
+        "stage": "Pod Harvest",
+        "days": "Days 66-105",
+        "description": "Large thick pods."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Chocolate Spot (Botrytis fabae)",
+        "symptoms": "Reddish-brown spots across leaves.",
+        "riskPeriod": "Cool overcast weather."
+      }
+    ],
+    "commonPests": [
+      "Black Bean Aphid"
+    ],
+    "generalPrevention": [
+      "Ensure wide row spacing (45 cm) for cross-ventilation."
+    ]
+  },
+  {
+    "id": "hyacinth-bean-wal",
+    "name": "Hyacinth Bean (Wal / Pavta)",
+    "localName": "वाल / पावटा (Wal / Kadve Wal / Surti Wal)",
+    "scientificName": "Lablab purpureus",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Late Kharif & Rabi",
+    "maharashtraRegion": "Konkan (Alibag Wal has GI status!), Pune, Satara, Western Maharashtra",
+    "description": "Iconic pulse of Maharashtra coastal cuisine (Alibag Walachi Usal / Birde). Famous for distinct aromatic taste and high medicinal value.",
+    "optimalTemp": "18°C - 28°C",
+    "waterRequirement": "350 - 450 mm; grown on residual moisture in rice fallows.",
+    "soilPreference": "Medium black to coastal alluvium.",
+    "growthStages": [
+      {
+        "stage": "Vegetative & Trailing",
+        "days": "Days 1-45",
+        "description": "Vigorous climbing vine trained on bunds or rice stubble."
+      },
+      {
+        "stage": "Blossoming",
+        "days": "Days 46-75",
+        "description": "White or purple fragrant flower racemes."
+      },
+      {
+        "stage": "Pod Picking",
+        "days": "Days 76-120",
+        "description": "Broad flat pods harvested for fresh beans or dried."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Yellow Mosaic",
+        "symptoms": "Golden leaf discoloration.",
+        "riskPeriod": "Whitefly season."
+      }
+    ],
+    "commonPests": [
+      "Aphids",
+      "Pod Borer"
+    ],
+    "generalPrevention": [
+      "Plant famous Konkan Wal, Phule Wal varieties."
+    ]
+  },
+  {
+    "id": "french-bean",
+    "name": "French Bean (Snap Bean)",
+    "localName": "फरसबी / श्रावण घेवडा (Pharasbi / Shravan Ghevda)",
+    "scientificName": "Phaseolus vulgaris var. humilis",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫛",
+    "season": "Kharif, Rabi & Zaid",
+    "maharashtraRegion": "Pune, Satara (Wai), Nashik, Kolhapur vegetable tracts",
+    "description": "Crisp, tender stringless green pods highly prized in premium urban vegetable markets.",
+    "optimalTemp": "15°C - 25°C",
+    "waterRequirement": "350 - 450 mm; regular light irrigations.",
+    "soilPreference": "Friable sandy loam rich in organic compost, pH 6.0 - 6.8.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-25",
+        "description": "Compact bush or climbing habit."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 26-40",
+        "description": "Self-pollinating blossoms."
+      },
+      {
+        "stage": "Pod Picking",
+        "days": "Days 41-65",
+        "description": "Harvest pods when tender and snap easily before seeds bulge."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Rust",
+        "symptoms": "Reddish pustules on leaves.",
+        "riskPeriod": "High humidity."
+      }
+    ],
+    "commonPests": [
+      "Whitefly",
+      "Leafhopper"
+    ],
+    "generalPrevention": [
+      "Grow Contender, Phule Suyash varieties."
+    ]
+  },
+  {
+    "id": "winged-bean",
+    "name": "Winged Bean (Goa Bean)",
+    "localName": "चौधारी घेवडा (Chaudhari Ghevda)",
+    "scientificName": "Psophocarpus tetragonolobus",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫛",
+    "season": "Kharif",
+    "maharashtraRegion": "Konkan, Western Ghats, Goa border",
+    "description": "All-edible miracle plant: tender four-winged pods, leaves, flowers, seeds, and tuberous roots are all protein-rich.",
+    "optimalTemp": "22°C - 32°C",
+    "waterRequirement": "600 - 800 mm.",
+    "soilPreference": "Moist laterite and alluvial soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-45",
+        "description": "Strong vine requiring trellising."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 46-75",
+        "description": "Sky-blue edible flowers."
+      },
+      {
+        "stage": "Pod Harvest",
+        "days": "Days 76-120",
+        "description": "Four-angled frilled pods picked tender."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Collar Rot",
+        "symptoms": "Damping off in waterlogged beds.",
+        "riskPeriod": "Heavy rains."
+      }
+    ],
+    "commonPests": [
+      "Caterpillars"
+    ],
+    "generalPrevention": [
+      "Provide strong bamboo trellis support."
+    ]
+  },
+  {
+    "id": "lima-bean",
+    "name": "Lima Bean (Butter Bean)",
+    "localName": "डबल बी / लीमा बीन (Double Bee)",
+    "scientificName": "Phaseolus lunatus",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Rabi",
+    "maharashtraRegion": "Mahabaleshwar, Panchgani, Satara cool hill tracts",
+    "description": "Large buttery flat beans cultivated in cool Western Ghat hill slopes, famous specialty in Mahabaleshwar.",
+    "optimalTemp": "15°C - 24°C",
+    "waterRequirement": "400 - 550 mm.",
+    "soilPreference": "Deep rich mountain loams.",
+    "growthStages": [
+      {
+        "stage": "Vine Growth",
+        "days": "Days 1-40",
+        "description": "Perennial or annual vigorous vine."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 41-70",
+        "description": "White or violet flowers."
+      },
+      {
+        "stage": "Pod Picking",
+        "days": "Days 71-110",
+        "description": "Large flat pods with creamy butter beans."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Downy Mildew",
+        "symptoms": "White fungal patches on pods.",
+        "riskPeriod": "Cold hill fog."
+      }
+    ],
+    "commonPests": [
+      "Pod Borer"
+    ],
+    "generalPrevention": [
+      "Harvest pods at mature green stage."
+    ]
+  },
+  {
+    "id": "rice-bean",
+    "name": "Rice Bean",
+    "localName": "राईस बीन / नवरंगी डाळ (Navrangi Dal)",
+    "scientificName": "Vigna umbellata",
+    "category": "Pulses & Legumes",
+    "avatarEmoji": "🫘",
+    "season": "Kharif",
+    "maharashtraRegion": "Tribal hill tracts of Vidarbha and Western Ghats, Northeast India",
+    "description": "Climate-hardy underutilized legume immune to many diseases of common pulses, highly nutritious.",
+    "optimalTemp": "20°C - 30°C",
+    "waterRequirement": "400 - 600 mm.",
+    "soilPreference": "Acidic and poor mountain soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-40",
+        "description": "Twining vine with yellow flowers."
+      },
+      {
+        "stage": "Pod Setting",
+        "days": "Days 41-75",
+        "description": "Slender cylindrical pods."
+      },
+      {
+        "stage": "Harvest",
+        "days": "Days 76-115",
+        "description": "Small oblong colored seeds."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Cercospora Leaf Spot",
+        "symptoms": "Brown leaf spots.",
+        "riskPeriod": "Humid periods."
+      }
+    ],
+    "commonPests": [
+      "Aphids"
+    ],
+    "generalPrevention": [
+      "Grown naturally in tribal eco-farms."
+    ]
+  },
+  {
+    "id": "groundnut-peanut",
+    "name": "Groundnut (Peanut)",
+    "localName": "भुईमूग / शेंगदाणा (Bhuimug / Shengdana)",
+    "scientificName": "Arachis hypogaea",
+    "category": "Oilseeds",
+    "avatarEmoji": "🥜",
+    "season": "Kharif & Summer",
+    "maharashtraRegion": "Western Maharashtra (Kolhapur, Satara, Sangli, Pune), Khandesh (Dhule, Jalgaon), Marathwada",
+    "description": "Premier edible oilseed and protein food of Maharashtra. Geocarpic crop where flowers bloom above ground and pegs penetrate soil to form subterranean pods.",
+    "optimalTemp": "25°C - 30°C",
+    "waterRequirement": "500 - 650 mm; critical water demand during flowering and peg penetration.",
+    "soilPreference": "Light sandy loam, well-drained friable red/black soils rich in calcium, pH 6.0 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Emergence & Branching",
+        "days": "Days 1-25",
+        "description": "Rapid seedling emergence and lateral branching."
+      },
+      {
+        "stage": "Flowering & Pegging",
+        "days": "Days 26-50",
+        "description": "Yellow self-pollinated flowers; fertilized gynophore (peg) grows geotropically into soil."
+      },
+      {
+        "stage": "Pod Development",
+        "days": "Days 51-85",
+        "description": "Underground pod expansion; gypsum application ensures plump shells."
+      },
+      {
+        "stage": "Pod Maturity & Harvest",
+        "days": "Days 86-115",
+        "description": "Internal pod shell displays dark brown reticulation; harvested by vine pullers."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Tikka Disease / Leaf Spot (Cercospora arachidicola)",
+        "symptoms": "Circular dark brown spots with prominent yellow halos on upper leaf surface.",
+        "riskPeriod": "Warm, humid weather with prolonged leaf wetness (25-30°C)."
+      },
+      {
+        "name": "Groundnut Rust (Puccinia arachidis)",
+        "symptoms": "Orange-brown pustules on leaf undersides causing severe defoliation.",
+        "riskPeriod": "High humidity and continuous cloudy monsoon spells."
+      }
+    ],
+    "commonPests": [
+      "Groundnut Leaf Miner",
+      "White Grub (Holotrichia consanguinea)",
+      "Spodoptera litura",
+      "Aphids"
+    ],
+    "generalPrevention": [
+      "Apply Gypsum @ 500 kg/ha at pegging (40-45 days) to ensure calcium for pod shell formation.",
+      "Treat seed with Trichoderma viride @ 5g/kg + Imidacloprid @ 2ml/kg.",
+      "Use high-yielding university varieties: Phule Unnati, JL-24 (Phule Pragati), TAG-24, or TG-37A."
+    ]
+  },
+  {
+    "id": "mustard-sarson",
+    "name": "Mustard (Rapeseed / Sarson)",
+    "localName": "मोहरी / राई / सरसो (Mohari / Sarson)",
+    "scientificName": "Brassica juncea",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌼",
+    "season": "Rabi (Winter)",
+    "maharashtraRegion": "Vidarbha, Khandesh, North Maharashtra, Rajasthan & MP border tracts",
+    "description": "Important winter oilseed yielding pungent cooking oil and nutrient-dense oilcake for dairy cattle.",
+    "optimalTemp": "15°C - 25°C",
+    "waterRequirement": "250 - 350 mm.",
+    "soilPreference": "Light to heavy loam with good drainage, pH 6.0 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Rosette & Vegetative",
+        "days": "Days 1-35",
+        "description": "Broad radical leaves form dense ground rosette."
+      },
+      {
+        "stage": "Bolting & Flowering",
+        "days": "Days 36-65",
+        "description": "Central flower stalk bolts into golden yellow blossoms."
+      },
+      {
+        "stage": "Siliqua (Pod) Formation",
+        "days": "Days 66-95",
+        "description": "Slender beaked pods (siliquae) develop containing tiny round seeds."
+      },
+      {
+        "stage": "Maturity",
+        "days": "Days 96-125",
+        "description": "Pods turn straw-yellow; harvested before shattering."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "White Rust (Albugo candida)",
+        "symptoms": "White porcelain-like blisters on leaf undersides and swollen staghead floral malformations.",
+        "riskPeriod": "Cool, humid morning fog."
+      },
+      {
+        "name": "Alternaria Blight",
+        "symptoms": "Concentric dark brown target spots on leaves and siliquae.",
+        "riskPeriod": "Warm humid spells after flowering."
+      }
+    ],
+    "commonPests": [
+      "Mustard Aphid (Lipaphis erysimi)",
+      "Painted Bug",
+      "Sawfly"
+    ],
+    "generalPrevention": [
+      "Sow early in October to escape severe aphid infestation in December-January.",
+      "Spray Oxydemeton-methyl or Dimethoate 30 EC @ 1ml/L at first aphid appearance on inflorescence."
+    ]
+  },
+  {
+    "id": "sunflower",
+    "name": "Sunflower",
+    "localName": "सूर्यफूल (Suryaphul)",
+    "scientificName": "Helianthus annuus",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌻",
+    "season": "Kharif, Rabi & Summer",
+    "maharashtraRegion": "Marathwada (Beed, Latur, Osmanabad), Solapur, Ahmednagar, Vidarbha",
+    "description": "Heliotropic oilseed with premium heart-healthy polyunsaturated fatty acids (PUFA). Photo-insensitive crop suitable for any season in Maharashtra.",
+    "optimalTemp": "20°C - 30°C",
+    "waterRequirement": "450 - 600 mm; critical at button stage, flowering, and seed development.",
+    "soilPreference": "Deep, fertile black clay soils or fertile loams, pH 6.5 - 8.0.",
+    "growthStages": [
+      {
+        "stage": "Emergence & Vegetative",
+        "days": "Days 1-30",
+        "description": "Rapid broad-leaf expansion and deep taproot development."
+      },
+      {
+        "stage": "Star / Button Stage",
+        "days": "Days 31-50",
+        "description": "Inflorescence bud appears at stem apex; heliotropism active."
+      },
+      {
+        "stage": "Flowering & Pollination",
+        "days": "Days 51-70",
+        "description": "Ray florets and disk florets open; honeybee pollination essential."
+      },
+      {
+        "stage": "Seed Filling & Capitulum Bending",
+        "days": "Days 71-95",
+        "description": "Back of flower head turns lemon yellow; achenes harden."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Alternaria Leaf Blight (Alternaria helianthi)",
+        "symptoms": "Dark brown circular spots coalescing into large necrotic blights.",
+        "riskPeriod": "Cloudy humid rainy weather."
+      },
+      {
+        "name": "Necrosis Disease (Tobamovirus)",
+        "symptoms": "Systemic mosaic, leaf malformation, and necrotic streaks on stem and capitulum; thrips vector.",
+        "riskPeriod": "Hot dry spells with high thrips activity."
+      }
+    ],
+    "commonPests": [
+      "Capitulum Borer (Helicoverpa armigera)",
+      "Thrips",
+      "Jassids"
+    ],
+    "generalPrevention": [
+      "Maintain 3-5 honeybee boxes per hectare to double pollination and prevent hollow seed formation.",
+      "Spray Mancozeb @ 2.5g/L or Propiconazole @ 1ml/L at initiation of Alternaria spots."
+    ]
+  },
+  {
+    "id": "safflower-kardai",
+    "name": "Safflower (Kardai)",
+    "localName": "करडई (Kardai)",
+    "scientificName": "Carthamus tinctorius",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌾",
+    "season": "Rabi (Winter)",
+    "maharashtraRegion": "Marathwada (Osmanabad, Beed, Latur), Solapur, Ahmednagar, Western Maharashtra",
+    "description": "Traditional drought-resilient spiny oilseed of Maharashtra black soils. Known for cold-pressed cardi-oil (high linoleic acid) and tender winter vegetable greens.",
+    "optimalTemp": "18°C - 28°C",
+    "waterRequirement": "250 - 350 mm; extremely deep taproot extracts moisture from subsoil.",
+    "soilPreference": "Deep black soils (Vertisols) with high water retention capacity.",
+    "growthStages": [
+      {
+        "stage": "Rosette Stage",
+        "days": "Days 1-40",
+        "description": "Slow prostrate growth while deep taproot penetrates 2-3 meters into subsoil."
+      },
+      {
+        "stage": "Stem Elongation & Branching",
+        "days": "Days 41-75",
+        "description": "Stiff spiny stems and branches form."
+      },
+      {
+        "stage": "Capitulum Flowering",
+        "days": "Days 76-105",
+        "description": "Vibrant orange-yellow florets bloom at branch tips."
+      },
+      {
+        "stage": "Seed Maturation",
+        "days": "Days 106-130",
+        "description": "White shiny achenes mature inside spiny involucral bracts."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Alternaria Leaf Spot",
+        "symptoms": "Concentric brown spots with chlorotic haloes on leaves.",
+        "riskPeriod": "Post-flowering winter humidity."
+      },
+      {
+        "name": "Safflower Wilt (Fusarium oxysporum)",
+        "symptoms": "Unilateral wilting and brown vascular discoloration.",
+        "riskPeriod": "Damp soil during vegetative rosette phase."
+      }
+    ],
+    "commonPests": [
+      "Safflower Aphid (Uroleucon carthami)",
+      "Gram Pod Borer"
+    ],
+    "generalPrevention": [
+      "Sow in late September or early October to escape aphid explosion in peak winter.",
+      "Use aphid-tolerant varieties like Phule Kusuma, Bhima, or NARI-6."
+    ]
+  },
+  {
+    "id": "sesame-til",
+    "name": "Sesame (Til)",
+    "localName": "तीळ (Til)",
+    "scientificName": "Sesamum indicum",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌱",
+    "season": "Kharif & Summer",
+    "maharashtraRegion": "Khandesh (Jalgaon, Dhule), Vidarbha, Solapur, Marathwada",
+    "description": "Queen of oilseeds; ancient oil-bearing plant rich in sesamin antioxidants and calcium. Sacred ingredient in Makar Sankranti Tilgul.",
+    "optimalTemp": "25°C - 35°C",
+    "waterRequirement": "300 - 400 mm; sensitive to waterlogging.",
+    "soilPreference": "Well-drained sandy loam or light black soil, pH 6.0 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-30",
+        "description": "Erect branching and opposite leaves."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 31-55",
+        "description": "Bell-shaped white to pale pink flowers open in leaf axils."
+      },
+      {
+        "stage": "Capsule Formation",
+        "days": "Days 56-80",
+        "description": "Four-grooved erect capsules develop containing rows of seeds."
+      },
+      {
+        "stage": "Maturity",
+        "days": "Days 81-100",
+        "description": "Bottom capsules turn yellow-brown; cut before dehiscence."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Phyllody (Phytoplasma)",
+        "symptoms": "Floral parts transform into green leafy structures; plant becomes sterile witches' broom; leafhopper vector.",
+        "riskPeriod": "Continuous warm weather with leafhopper activity."
+      },
+      {
+        "name": "Bacterial Blight",
+        "symptoms": "Angular water-soaked spots on foliage.",
+        "riskPeriod": "Wind-driven monsoon showers."
+      }
+    ],
+    "commonPests": [
+      "Til Hawk Moth (Sphingid caterpillar)",
+      "Antigastra Gall Fly"
+    ],
+    "generalPrevention": [
+      "Use varieties like Tapi (JLT-408), Phule Til-1, or RT-351.",
+      "Control leafhopper vector using Imidacloprid @ 3ml/10L to prevent incurable Phyllody."
+    ]
+  },
+  {
+    "id": "castor-erandi",
+    "name": "Castor",
+    "localName": "एरंडी (Erandi)",
+    "scientificName": "Ricinus communis",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌿",
+    "season": "Kharif",
+    "maharashtraRegion": "Marathwada, Vidarbha, Khandesh, Gujarat border tracts",
+    "description": "High-value non-edible industrial oilseed producing ricinoleic acid used for high-grade aviation lubricants, cosmetics, and biodiesel.",
+    "optimalTemp": "25°C - 35°C",
+    "waterRequirement": "400 - 600 mm; hardy taproot system.",
+    "soilPreference": "Deep loam to gravelly light soil with good internal drainage.",
+    "growthStages": [
+      {
+        "stage": "Seedling",
+        "days": "Days 1-30",
+        "description": "Large palmate leaves expand."
+      },
+      {
+        "stage": "Primary Spike Flowering",
+        "days": "Days 31-70",
+        "description": "Monoecious flowers on terminal raceme."
+      },
+      {
+        "stage": "Capsule Setting & Spikes",
+        "days": "Days 71-120",
+        "description": "Spiny capsules form on multiple spike orders."
+      },
+      {
+        "stage": "Harvesting",
+        "days": "Days 121-180",
+        "description": "Spikes picked as capsules turn yellowish-brown."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Castor Wilt (Fusarium oxysporum f. sp. ricini)",
+        "symptoms": "Yellowing and wilting of plants with internal stem vascular browning.",
+        "riskPeriod": "Flowering stage during soil moisture stress."
+      },
+      {
+        "name": "Botrytis Gray Mold",
+        "symptoms": "Woolly gray fungal mold rotting entire spikes during rain.",
+        "riskPeriod": "Continuous humid overcast monsoon weather."
+      }
+    ],
+    "commonPests": [
+      "Castor Semilooper (Achaea janata)",
+      "Shoot & Capsule Borer"
+    ],
+    "generalPrevention": [
+      "Use wilt-resistant hybrids: DCH-177, GCH-7, or Phule Castor-1.",
+      "Install bird perches @ 25/ha to encourage birds feeding on semiloopers."
+    ]
+  },
+  {
+    "id": "linseed-flaxseed-javas",
+    "name": "Linseed / Flaxseed (Javas)",
+    "localName": "जवस / अळशी (Javas / Alsi)",
+    "scientificName": "Linum usitatissimum",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌱",
+    "season": "Rabi (Winter)",
+    "maharashtraRegion": "Vidarbha (Chandrapur, Bhandara, Nagpur), Marathwada, Central India",
+    "description": "Ancient oilseed celebrated as modern superfood rich in Omega-3 (alpha-linolenic acid), lignans, and dietary fiber. Famous for Maharashtrian Javas Chutney.",
+    "optimalTemp": "15°C - 25°C",
+    "waterRequirement": "250 - 350 mm.",
+    "soilPreference": "Deep black moisture-retentive soils (Vertisols) or clay loams.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-35",
+        "description": "Slender fibrous erect stems with linear leaves."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 36-65",
+        "description": "Sky-blue to violet flowers open in morning sunshine."
+      },
+      {
+        "stage": "Boll Formation",
+        "days": "Days 66-95",
+        "description": "Globular bolls (capsules) develop containing 10 flat shiny seeds."
+      },
+      {
+        "stage": "Maturity",
+        "days": "Days 96-120",
+        "description": "Bolls turn golden brown; rustle when shaken."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Linseed Rust (Melampsora lini)",
+        "symptoms": "Bright orange-yellow uredial pustules on leaves and stems, later turning glossy black.",
+        "riskPeriod": "Humid cool winter weather."
+      }
+    ],
+    "commonPests": [
+      "Linseed Gall Midge (Dasyneura lini)",
+      "Semilooper"
+    ],
+    "generalPrevention": [
+      "Use rust-resistant university varieties: PKV NL-260, Meera, Sharda, or JLS-9."
+    ]
+  },
+  {
+    "id": "niger-karale",
+    "name": "Niger Seed (Karale)",
+    "localName": "कारळे / खुरसणी (Karale / Khursani)",
+    "scientificName": "Guizotia abyssinica",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌼",
+    "season": "Late Kharif",
+    "maharashtraRegion": "Tribal hill zones of Nashik (Igatpuri, Surgana), Nandurbar, Thane, Western Ghats",
+    "description": "Hardy oilseed grown on impoverished tribal hill slopes. Core ingredient of authentic fiery Maharashtrian Karale Chutney.",
+    "optimalTemp": "18°C - 28°C",
+    "waterRequirement": "300 - 450 mm; thrives on residual monsoon moisture.",
+    "soilPreference": "Light gravelly laterite, poor stony or acidic soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-35",
+        "description": "Dense semi-bush with yellow composite flowers."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 36-70",
+        "description": "Bright golden daisy-like heads attract bees."
+      },
+      {
+        "stage": "Seed Hardening & Harvest",
+        "days": "Days 71-105",
+        "description": "Small black glossy seeds fill capitula."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Cercospora Leaf Spot",
+        "symptoms": "Small brown spots on foliage.",
+        "riskPeriod": "Post-monsoon mists."
+      }
+    ],
+    "commonPests": [
+      "Semilooper"
+    ],
+    "generalPrevention": [
+      "Use improved varieties: Phule Karale, IGP-76, RCR-18."
+    ]
+  },
+  {
+    "id": "coconut-oil",
+    "name": "Coconut Palm (Copra & Oil)",
+    "localName": "नारळ / खोबरे (Narel / Khobare)",
+    "scientificName": "Cocos nucifera",
+    "category": "Oilseeds",
+    "avatarEmoji": "🥥",
+    "season": "Perennial / Year-round",
+    "maharashtraRegion": "Konkan (Sindhudurg, Ratnagiri, Raigad, Palghar)",
+    "description": "Tree of life (Kalpavriksha) producing pure copra oil for culinary, hair care, and wellness.",
+    "optimalTemp": "24°C - 32°C",
+    "waterRequirement": "1,300 - 2,000 mm.",
+    "soilPreference": "Coastal alluvium and lateritic soils.",
+    "growthStages": [
+      {
+        "stage": "Seedling",
+        "days": "Years 1-3",
+        "description": "Nursery sprout establishment."
+      },
+      {
+        "stage": "Trunk & Canopy",
+        "days": "Years 4-6",
+        "description": "Crown of pinnate fronds."
+      },
+      {
+        "stage": "Inflorescence Spathe",
+        "days": "Monthly",
+        "description": "Spadix blooms with male and female button nuts."
+      },
+      {
+        "stage": "Dry Nut Maturity",
+        "days": "Months 11-12",
+        "description": "Husk browns; rich copra kernel."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Bud Rot (Phytophthora palmivora)",
+        "symptoms": "Heart leaf withers and rots with foul smell.",
+        "riskPeriod": "Heavy continuous monsoon rains."
+      }
+    ],
+    "commonPests": [
+      "Rhinoceros Beetle",
+      "Red Palm Weevil"
+    ],
+    "generalPrevention": [
+      "Apply Bordeaux paste to crown before monsoon.",
+      "Install pheromone traps for Red Palm Weevil."
+    ]
+  },
+  {
+    "id": "oil-palm",
+    "name": "Oil Palm",
+    "localName": "ऑइल पाम / तेल ताड (Oil Palm)",
+    "scientificName": "Elaeis guineensis",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌴",
+    "season": "Perennial",
+    "maharashtraRegion": "Konkan coast, Coastal Andhra Pradesh, Tamil Nadu, Kerala",
+    "description": "Highest yielding edible oil crop per hectare in the world; fresh fruit bunches processed for crude palm oil.",
+    "optimalTemp": "24°C - 32°C",
+    "waterRequirement": "2,000 - 2,500 mm or assured drip.",
+    "soilPreference": "Deep, fertile friable loams.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Years 1-3",
+        "description": "Massive frond whorls form."
+      },
+      {
+        "stage": "Bunch Bearing",
+        "days": "Year 4 onwards",
+        "description": "Dense fruit bunches in leaf axils."
+      },
+      {
+        "stage": "Harvesting",
+        "days": "Every 10-14 days",
+        "description": "Bunches harvested when outer fruits turn reddish-orange."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Basal Stem Rot (Ganoderma)",
+        "symptoms": "Yellowing fronds and brackets at trunk base.",
+        "riskPeriod": "Humid wet plantations."
+      }
+    ],
+    "commonPests": [
+      "Rhinoceros Beetle"
+    ],
+    "generalPrevention": [
+      "Field sanitation and root feeding with bio-control Trichoderma."
+    ]
+  },
+  {
+    "id": "cottonseed-oil",
+    "name": "Cottonseed (Binola)",
+    "localName": "सरकी (Sarki / Binola)",
+    "scientificName": "Gossypium hirsutum (Seed)",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌱",
+    "season": "Kharif byproduct",
+    "maharashtraRegion": "Vidarbha, Marathwada, Khandesh",
+    "description": "Massive source of edible washed cottonseed oil and protein-dense cattle feed cake across Maharashtra.",
+    "optimalTemp": "22°C - 32°C",
+    "waterRequirement": "500 - 700 mm.",
+    "soilPreference": "Deep black cotton soils.",
+    "growthStages": [
+      {
+        "stage": "Boll Maturation",
+        "days": "Days 100-140",
+        "description": "Seeds accumulate oil inside cotton bolls."
+      },
+      {
+        "stage": "Ginning",
+        "days": "Post-harvest",
+        "description": "Lint separated from seed at ginning mills."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Seed Rot",
+        "symptoms": "Discolored seeds.",
+        "riskPeriod": "Late unseasonal rains."
+      }
+    ],
+    "commonPests": [
+      "Pink Bollworm in seed kernel"
+    ],
+    "generalPrevention": [
+      "Delinting and thorough seed drying to 9% moisture."
+    ]
+  },
+  {
+    "id": "chia-seed",
+    "name": "Chia Seed",
+    "localName": "चिया सीड (Chia Seeds)",
+    "scientificName": "Salvia hispanica",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌱",
+    "season": "Rabi",
+    "maharashtraRegion": "Experimental trials in Pune, Ahmednagar, MP, Rajasthan",
+    "description": "Ancient superfood packed with Omega-3 fatty acids, antioxidants, and mucilage fiber.",
+    "optimalTemp": "16°C - 26°C",
+    "waterRequirement": "350 - 450 mm.",
+    "soilPreference": "Sandy loam with excellent drainage.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-40",
+        "description": "Opposite serrated leaves."
+      },
+      {
+        "stage": "Flowering Spikes",
+        "days": "Days 41-75",
+        "description": "Purple or white spicate blossoms."
+      },
+      {
+        "stage": "Seed Harvest",
+        "days": "Days 76-115",
+        "description": "Tiny mottle-patterned seeds mature."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Root Rot",
+        "symptoms": "Wilting in heavy clay.",
+        "riskPeriod": "Excess watering."
+      }
+    ],
+    "commonPests": [
+      "Aphids"
+    ],
+    "generalPrevention": [
+      "Plant on raised beds to guarantee zero standing water."
+    ]
+  },
+  {
+    "id": "tarameera",
+    "name": "Taramira (Arugula Seed)",
+    "localName": "तरामिर / तारा मीरा (Taramira)",
+    "scientificName": "Eruca sativa",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌱",
+    "season": "Rabi",
+    "maharashtraRegion": "North Maharashtra, Rajasthan, Punjab dry areas",
+    "description": "Extremely drought and salt tolerant oilseed yielding pungent oil used for illumination, lubricating, and cattle.",
+    "optimalTemp": "12°C - 22°C",
+    "waterRequirement": "150 - 250 mm.",
+    "soilPreference": "Light sandy impoverished soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-30",
+        "description": "Lobed aromatic leaves."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 31-65",
+        "description": "Creamy veined flowers."
+      },
+      {
+        "stage": "Harvest",
+        "days": "Days 66-95",
+        "description": "Siliquae harvested."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Downy Mildew",
+        "symptoms": "White patches.",
+        "riskPeriod": "Winter fog."
+      }
+    ],
+    "commonPests": [
+      "Aphids"
+    ],
+    "generalPrevention": [
+      "Grows with minimum moisture."
+    ]
+  },
+  {
+    "id": "canola-oilseed",
+    "name": "Canola (Low Erucic Mustard)",
+    "localName": "कॅनोला (Canola)",
+    "scientificName": "Brassica napus",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌼",
+    "season": "Rabi",
+    "maharashtraRegion": "Punjab, Haryana, experimental zones in Vidarbha",
+    "description": "Specially bred low-erucic acid mustard yielding healthy cooking oil with high smoke point.",
+    "optimalTemp": "14°C - 24°C",
+    "waterRequirement": "300 - 400 mm.",
+    "soilPreference": "Fertile loam.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-35",
+        "description": "Foliage canopy."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 36-70",
+        "description": "Yellow racemes."
+      },
+      {
+        "stage": "Siliqua Filling",
+        "days": "Days 71-110",
+        "description": "Pods fill with dark round seeds."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Sclerotinia Stem Rot",
+        "symptoms": "Bleached white stem lesions with black sclerotia inside.",
+        "riskPeriod": "Dense humid canopy."
+      }
+    ],
+    "commonPests": [
+      "Aphids"
+    ],
+    "generalPrevention": [
+      "Foliar spray of Carbendazim at flowering if sclerotinia is prevalent."
+    ]
+  },
+  {
+    "id": "neem-seed-oil",
+    "name": "Neem Seed (Oil & Karanj)",
+    "localName": "कडुनिंब बी / निंबोळी (Nimboli)",
+    "scientificName": "Azadirachta indica",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌿",
+    "season": "Summer Harvest",
+    "maharashtraRegion": "Throughout Maharashtra & India",
+    "description": "Priceless botanical biopesticide and soil nitrifying inhibitor (Neem Coated Urea) derived from dried wild nimboli.",
+    "optimalTemp": "20°C - 42°C",
+    "waterRequirement": "Rainfed.",
+    "soilPreference": "All soil types.",
+    "growthStages": [
+      {
+        "stage": "Flowering",
+        "days": "March-April",
+        "description": "Fragrant white floral panicles."
+      },
+      {
+        "stage": "Fruiting",
+        "days": "May-July",
+        "description": "Green drupes turn golden yellow and drop."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Dieback",
+        "symptoms": "Twig drying.",
+        "riskPeriod": "Rainy humidity."
+      }
+    ],
+    "commonPests": [
+      "Tea Mosquito Bug"
+    ],
+    "generalPrevention": [
+      "Collect freshly fallen yellow nimboli and sun-dry on clean tarpaulins."
+    ]
+  },
+  {
+    "id": "mahua-seed-oil",
+    "name": "Mahua Seed (Tora / Moha)",
+    "localName": "मोह / तोरा (Moha / Mahua Oil)",
+    "scientificName": "Madhuca longifolia",
+    "category": "Oilseeds",
+    "avatarEmoji": "🌳",
+    "season": "Summer",
+    "maharashtraRegion": "Vidarbha forest tracts (Gadchiroli, Chandrapur, Gondia), Melghat",
+    "description": "Forest oilseed yielding rich butter-like fat used for tribal cooking, soap making, and lighting.",
+    "optimalTemp": "22°C - 40°C",
+    "waterRequirement": "Rainfed.",
+    "soilPreference": "Forest hills.",
+    "growthStages": [
+      {
+        "stage": "Fruiting",
+        "days": "May-June",
+        "description": "Fleshy berries fall containing large brown oily seeds."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Fungal Rot",
+        "symptoms": "Kernel decay.",
+        "riskPeriod": "Damp storage."
+      }
+    ],
+    "commonPests": [
+      "Weevils"
+    ],
+    "generalPrevention": [
+      "Sun-dry seeds thoroughly to prevent aflatoxin contamination."
+    ]
+  },
+  {
+    "id": "sugarcane",
+    "name": "Sugarcane",
+    "localName": "ऊस (Oos)",
+    "scientificName": "Saccharum officinarum",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🎋",
+    "season": "Annual / Adsali (12-18 months)",
+    "maharashtraRegion": "Western Maharashtra (Kolhapur, Sangli, Pune, Satara, Ahmednagar), Marathwada",
+    "description": "The lifeline of Maharashtra cooperative agro-economy and sugar capital of India. Massive biomass grass yielding crystalline sucrose, jaggery (gul), and bagasse bio-power.",
+    "optimalTemp": "20°C - 35°C (high sunshine and warm weather)",
+    "waterRequirement": "1,500 - 2,500 mm; well-scheduled canal or drip irrigation essential.",
+    "soilPreference": "Deep, well-drained fertile clay loam or medium black cotton soil with pH 6.5 - 8.0.",
+    "growthStages": [
+      {
+        "stage": "Germination & Sprouting",
+        "days": "Days 1-35",
+        "description": "Buds on 2-3 budded setts swell and push through furrow soil."
+      },
+      {
+        "stage": "Formative & Tillering",
+        "days": "Days 36-120",
+        "description": "Heavy underground tillering creates 6-8 millable canes per clump."
+      },
+      {
+        "stage": "Grand Growth & Elongation",
+        "days": "Days 121-270",
+        "description": "Rapid internode elongation, cane thickening, and massive green foliage expansion."
+      },
+      {
+        "stage": "Ripening & Maturity",
+        "days": "Days 271-360",
+        "description": "Sugar synthesizes from top to bottom internodes; brix reaches 18-22%."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Red Rot (Colletotrichum falcatum)",
+        "symptoms": "Third or fourth leaf from top yellows, canes lose turgidity, pith displays longitudinal red lesions with white cross-bands and alcohol smell.",
+        "riskPeriod": "Waterlogged fields following heavy monsoon rains."
+      },
+      {
+        "name": "Sugarcane Smut (Sporisorium scitamineum)",
+        "symptoms": "Terminal growing point transforms into a long curved black whip-like structure covered in sooty spores.",
+        "riskPeriod": "Ratoon crops during hot dry spells."
+      },
+      {
+        "name": "Grassy Shoot Disease (Phytoplasma)",
+        "symptoms": "Profuse thin chlorotic shoots emerging from base giving witches' broom appearance without cane formation.",
+        "riskPeriod": "Infected setts transmitted by aphids."
+      }
+    ],
+    "commonPests": [
+      "Early Shoot Borer (Chilo infuscatellus)",
+      "Internode Borer",
+      "Top Borer",
+      "Whitefly",
+      "Root Grub (Holotrichia serrata)"
+    ],
+    "generalPrevention": [
+      "Use premier university varieties: Co-86032 (Nira), CoM-0265 (Phule 265), or MS-10001.",
+      "Treat seed setts in hot water or fungicide bath (Carbendazim @ 1g/L) before planting.",
+      "Adopt wide-row planting (4 to 5 feet) with drip fertigation to save 50% water and boost sucrose yields.",
+      "Apply bio-agent Metarhizium anisopliae @ 5 kg/ha to eradicate devastating White grubs."
+    ]
+  },
+  {
+    "id": "cotton-bt",
+    "name": "Cotton (BT Kapas)",
+    "localName": "कापूस (Kapas)",
+    "scientificName": "Gossypium hirsutum",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "☁️",
+    "season": "Kharif",
+    "maharashtraRegion": "Vidarbha (Yavatmal, Amravati, Akola, Wardha), Marathwada (Nanded, Jalna, Aurangabad), Khandesh (Jalgaon, Dhule)",
+    "description": "The white gold of Maharashtra. Major fiber crop driving rural livelihoods across the black cotton soils of Vidarbha, Khandesh, and Marathwada.",
+    "optimalTemp": "22°C - 34°C (warm days, plenty of sunshine during boll bursting)",
+    "waterRequirement": "600 - 850 mm; sensitive to waterlogging as well as prolonged drought at flowering.",
+    "soilPreference": "Deep, moisture-retentive black cotton soil (Vertisols) with good drainage, pH 6.5 - 8.0.",
+    "growthStages": [
+      {
+        "stage": "Germination & Square Formation",
+        "days": "Days 1-45",
+        "description": "Deep taproot development; pyramidal branching; floral buds (squares) appear in leaf axils."
+      },
+      {
+        "stage": "Flowering & Boll Initiation",
+        "days": "Days 46-90",
+        "description": "Creamy-white flowers bloom, turn pinkish-purple on day two after pollination; young bolls set."
+      },
+      {
+        "stage": "Boll Development & Maturation",
+        "days": "Days 91-135",
+        "description": "Bolls expand accumulating fiber and oil; pink bollworm vulnerable period."
+      },
+      {
+        "stage": "Boll Bursting & Picking",
+        "days": "Days 136-180",
+        "description": "Mature bolls dehisce exposing fluffy white lint; handpicked in 3-4 pickings."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Cotton Leaf Curl Virus (CLCuV)",
+        "symptoms": "Upward or downward leaf curling, vein thickening, and leafy enations on underside of leaves; whitefly vector.",
+        "riskPeriod": "Hot weather with high whitefly activity."
+      },
+      {
+        "name": "Bacterial Blight / Angular Leaf Spot (Xanthomonas citri pv. malvacearum)",
+        "symptoms": "Angular water-soaked spots bounded by veins on leaves, black arm lesions on branches, water-soaked spots on bolls.",
+        "riskPeriod": "Warm humid conditions with stormy wind-driven rains."
+      },
+      {
+        "name": "Grey Mildew / Dahiya Disease (Ramularia areola)",
+        "symptoms": "White powdery frost-like angular patches on lower leaf surface leading to premature leaf shedding.",
+        "riskPeriod": "Post-monsoon cool nights with high morning humidity."
+      }
+    ],
+    "commonPests": [
+      "Pink Bollworm (Pectinophora gossypiella)",
+      "American Bollworm",
+      "Whitefly",
+      "Thrips",
+      "Cotton Jassid (Amrasca biguttula)"
+    ],
+    "generalPrevention": [
+      "Install pheromone traps @ 5/ha for early Pink bollworm monitoring and @ 20/ha for mass trapping.",
+      "Spray Flonicamid 50 WG @ 3g/10L for effective control of sucking pests (jassids and thrips).",
+      "Avoid late-season extension of cotton crop beyond January to break the life cycle of Pink bollworm.",
+      "Plant non-Bt border rows to delay pest resistance development."
+    ]
+  },
+  {
+    "id": "desi-cotton",
+    "name": "Desi Cotton (Tree Cotton)",
+    "localName": "देशी कापूस (Desi Kapas)",
+    "scientificName": "Gossypium arboreum",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "☁️",
+    "season": "Kharif",
+    "maharashtraRegion": "Marathwada, Vidarbha rainfed dry belts",
+    "description": "Hardy indigenous cotton immune to sucking pests, drought, and requiring minimal chemical inputs. Highly valued for medical cotton and denim.",
+    "optimalTemp": "25°C - 36°C",
+    "waterRequirement": "450 - 600 mm.",
+    "soilPreference": "Medium to shallow black soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-45",
+        "description": "Sturdy bush."
+      },
+      {
+        "stage": "Flowering",
+        "days": "Days 46-90",
+        "description": "Yellow blossoms with red centers."
+      },
+      {
+        "stage": "Boll Bursting",
+        "days": "Days 91-140",
+        "description": "Fluffy lint bolls."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Fusarium Wilt",
+        "symptoms": "Yellowing and wilting.",
+        "riskPeriod": "Damp soil."
+      }
+    ],
+    "commonPests": [
+      "Spotted Bollworm"
+    ],
+    "generalPrevention": [
+      "Use varieties: PA-255 (Turab), PA-402, PKV DH-1."
+    ]
+  },
+  {
+    "id": "tobacco",
+    "name": "Tobacco",
+    "localName": "तंबाखू (Tambakhu)",
+    "scientificName": "Nicotiana tabacum",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🍂",
+    "season": "Late Kharif / Rabi",
+    "maharashtraRegion": "Kolhapur (Nipani border belt), Sangli, Gujarat border tracts",
+    "description": "Commercial leaf crop processed for bidi and chewing tobacco. Kolhapur-Nipani tract is famous across India for high-nicotine bidi tobacco.",
+    "optimalTemp": "20°C - 30°C",
+    "waterRequirement": "400 - 550 mm.",
+    "soilPreference": "Light sandy loam to well-drained medium black soil.",
+    "growthStages": [
+      {
+        "stage": "Nursery & Transplanting",
+        "days": "Days 1-45",
+        "description": "Tiny seeds raised in nursery; transplanted."
+      },
+      {
+        "stage": "Vegetative & Topping",
+        "days": "Days 46-85",
+        "description": "Rapid broad leaf growth; terminal flower head nipped (topped) to direct energy to leaves."
+      },
+      {
+        "stage": "Desuckering & Maturation",
+        "days": "Days 86-125",
+        "description": "Axillary suckers removed; leaves turn thick leathery yellow-green with brown spangles."
+      },
+      {
+        "stage": "Harvesting & Curing",
+        "days": "Days 126-150",
+        "description": "Leaves cut and sun-cured or pit-cured on ground."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Tobacco Mosaic Virus (TMV)",
+        "symptoms": "Mottling of light and dark green patches, leaf blistering and distortion.",
+        "riskPeriod": "Mechanical contact during topping and desuckering."
+      },
+      {
+        "name": "Black Shank (Phytophthora nicotianae)",
+        "symptoms": "Black discoloration of stem base and discing of pith.",
+        "riskPeriod": "Continuous damp soil."
+      }
+    ],
+    "commonPests": [
+      "Tobacco Caterpillar (Spodoptera litura)",
+      "Aphid",
+      "Whitefly"
+    ],
+    "generalPrevention": [
+      "Wash hands with soap and trisodium phosphate before handling plants to prevent TMV spread.",
+      "Use recommended bidi varieties: Anand-119, Vedaganga-1, or Bhagyashree."
+    ]
+  },
+  {
+    "id": "jute-tag",
+    "name": "Jute (Golden Fiber)",
+    "localName": "ताग / पाट (Tag / Pat)",
+    "scientificName": "Corchorus olitorius",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🌾",
+    "season": "Kharif",
+    "maharashtraRegion": "Eastern India (West Bengal, Bihar, Assam), Konkan river basins",
+    "description": "The biodegradable golden fiber of India used for burlap bags, geotextiles, rope, and eco-packaging.",
+    "optimalTemp": "24°C - 35°C (high humidity)",
+    "waterRequirement": "1,200 - 1,800 mm.",
+    "soilPreference": "Alluvial silt loam near river deltas.",
+    "growthStages": [
+      {
+        "stage": "Vegetative Elongation",
+        "days": "Days 1-90",
+        "description": "Unbranched straight tall cylindrical stems reaching 3-4 meters."
+      },
+      {
+        "stage": "Small Pod / Flowering",
+        "days": "Days 91-120",
+        "description": "Yellow small blossoms; harvested at 50% flowering for best fiber quality."
+      },
+      {
+        "stage": "Retting",
+        "days": "Post-harvest",
+        "description": "Bundles submerged in slow-moving water for 15-20 days for microbial pectin breakdown."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Stem Rot (Macrophomina phaseolina)",
+        "symptoms": "Brown to black lesions on stem causing breaking.",
+        "riskPeriod": "Hot waterlogged soil."
+      }
+    ],
+    "commonPests": [
+      "Jute Semilooper",
+      "Yellow Mite",
+      "Hairy Caterpillar"
+    ],
+    "generalPrevention": [
+      "Harvest promptly at small pod stage to secure fine silky fiber tensile strength."
+    ]
+  },
+  {
+    "id": "mesta-ambadi",
+    "name": "Mesta (Ambadi / Roselle)",
+    "localName": "अंबाडी / मेस्टा (Ambadi)",
+    "scientificName": "Hibiscus sabdariffa",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🌿",
+    "season": "Kharif",
+    "maharashtraRegion": "Marathwada, Vidarbha, Khandesh",
+    "description": "Multipurpose commercial crop: tough bast fibers extracted from stems; tender tangy leaves cooked as Maharashtra's famous culinary 'Ambadi Bhaji'.",
+    "optimalTemp": "22°C - 34°C",
+    "waterRequirement": "500 - 700 mm.",
+    "soilPreference": "Medium to light soils.",
+    "growthStages": [
+      {
+        "stage": "Vegetative",
+        "days": "Days 1-45",
+        "description": "Tender red/green stalks; culinary leaf picking."
+      },
+      {
+        "stage": "Flowering & Calyx",
+        "days": "Days 46-100",
+        "description": "Large yellow flowers with crimson center; fleshy calyx forms."
+      },
+      {
+        "stage": "Fiber Retting",
+        "days": "Days 101-140",
+        "description": "Stalks cut and retted for twine and rope."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Foot & Stem Rot",
+        "symptoms": "Dark rotting at base.",
+        "riskPeriod": "Excess rain."
+      }
+    ],
+    "commonPests": [
+      "Flea Beetle",
+      "Mealybug"
+    ],
+    "generalPrevention": [
+      "Use varieties: AMV-5, AS-73-CP-560."
+    ]
+  },
+  {
+    "id": "sunn-hemp",
+    "name": "Sunn Hemp (San)",
+    "localName": "सन / ताग (San / Sunnhemp)",
+    "scientificName": "Crotalaria juncea",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🌱",
+    "season": "Kharif & Summer",
+    "maharashtraRegion": "Throughout Maharashtra (Western Maharashtra, Vidarbha, Marathwada)",
+    "description": "Premier fast-growing green manure and fiber crop. Fixes 100 kg nitrogen per hectare and decomposes in 45 days to rejuvenate tired soils.",
+    "optimalTemp": "22°C - 34°C",
+    "waterRequirement": "350 - 500 mm.",
+    "soilPreference": "Adaptable to all well-drained soils.",
+    "growthStages": [
+      {
+        "stage": "Rapid Emergence",
+        "days": "Days 1-20",
+        "description": "Vigorous thick growth suppressing all weeds."
+      },
+      {
+        "stage": "Green Manure Incorporation",
+        "days": "Days 45-50",
+        "description": "Ploughed into moist soil at succulent flowering stage."
+      },
+      {
+        "stage": "Fiber Harvest",
+        "days": "Days 80-100",
+        "description": "Left to mature if tough cordage fiber is required."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Vascular Wilt",
+        "symptoms": "Drooping leaves.",
+        "riskPeriod": "Warm soils."
+      }
+    ],
+    "commonPests": [
+      "Sunnhemp Hairy Caterpillar"
+    ],
+    "generalPrevention": [
+      "Plough in at 50% bloom for maximum organic nitrogen synthesis."
+    ]
+  },
+  {
+    "id": "mulberry-sericulture",
+    "name": "Mulberry (Reshim / Tuti)",
+    "localName": "तुती / रेशीम शेती (Tuti / Mulberry)",
+    "scientificName": "Morus alba",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🍃",
+    "season": "Perennial (Pruned 5 times a year)",
+    "maharashtraRegion": "Western Maharashtra (Pune, Satara, Sangli, Solapur), Marathwada (Beed, Osmanabad)",
+    "description": "Commercial agro-enterprise feeding silkworms (Bombyx mori) to harvest lustrous white bivoltine silk cocoons. Provides continuous monthly farm cash flow.",
+    "optimalTemp": "24°C - 30°C",
+    "waterRequirement": "1,000 - 1,200 mm or regular drip.",
+    "soilPreference": "Deep, fertile well-drained loams, pH 6.5 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Bottom Pruning",
+        "days": "Day 1",
+        "description": "Canes pruned close to ground to stimulate fresh succulent shoots."
+      },
+      {
+        "stage": "Shoot Elongation",
+        "days": "Days 2-35",
+        "description": "Rapid growth of protein-dense glossy green leaves."
+      },
+      {
+        "stage": "Leaf / Shoot Harvesting",
+        "days": "Days 36-65",
+        "description": "Canes harvested daily and fed to voracious 5th instar silkworms in rearing sheds."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Leaf Spot (Cercospora moricola)",
+        "symptoms": "Brown circular spots on foliage reducing silkworm palatability.",
+        "riskPeriod": "Monsoon humidity."
+      },
+      {
+        "name": "Powdery Mildew (Phyllactinia corylea)",
+        "symptoms": "White powdery patches on leaf undersides.",
+        "riskPeriod": "Cool winter months."
+      }
+    ],
+    "commonPests": [
+      "Thrips",
+      "Mealybug (Tukra disease causing bunched leaf tips)",
+      "Whitefly"
+    ],
+    "generalPrevention": [
+      "Use high-yielding university varieties: V-1 (Victory-1), S-36, or G-4.",
+      "Release predator beetles Cryptolaemus montrouzieri @ 250 adults/acre to eradicate Tukra mealybugs."
+    ]
+  },
+  {
+    "id": "betel-vine-paan",
+    "name": "Betel Vine (Paanvel)",
+    "localName": "पानवेल / विड्याचे पान (Paanvel)",
+    "scientificName": "Piper betle",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🍃",
+    "season": "Perennial Shade Vine",
+    "maharashtraRegion": "Sangli, Solapur, Pune, Raigad, Vasai, Amaravati",
+    "description": "High-value perennial shade-loving creeper yielding glossy heart-shaped aromatic betel leaves for traditional Vidya paan and digestive use.",
+    "optimalTemp": "22°C - 30°C (cool, moist conservatory microclimate)",
+    "waterRequirement": "Frequent light misting; shade conservatories (bareja) required.",
+    "soilPreference": "Rich, fertile well-aerated sandy loam with heavy compost, pH 7.0 - 7.5.",
+    "growthStages": [
+      {
+        "stage": "Vine Training",
+        "days": "Months 1-3",
+        "description": "Trained on live supports of Shevri or Sesbania inside thatched shade huts."
+      },
+      {
+        "stage": "Leaf Plucking",
+        "days": "Every 15-20 days",
+        "description": "Mature lustrous green leaves carefully snapped with fingernail."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Foot Rot / Phytophthora Wilt",
+        "symptoms": "Sudden leaf wilting and blackening of stem internodes.",
+        "riskPeriod": "Monsoon moisture stagnation inside humid bareja."
+      },
+      {
+        "name": "Anthracnose / Leaf Spot",
+        "symptoms": "Dark circular spots with yellow halo.",
+        "riskPeriod": "High humidity."
+      }
+    ],
+    "commonPests": [
+      "Betelvine Bug",
+      "Mealybug",
+      "Nematodes"
+    ],
+    "generalPrevention": [
+      "Drench root base with Trichoderma harzianum and apply 1% Bordeaux mixture on lower vines.",
+      "Ensure optimal ditch drainage around thatched conservatories."
+    ]
+  },
+  {
+    "id": "rubber",
+    "name": "Natural Rubber",
+    "localName": "रबर (Rubber)",
+    "scientificName": "Hevea brasiliensis",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🌳",
+    "season": "Perennial Tree (Tapping from Year 7)",
+    "maharashtraRegion": "Kerala, Coastal Konkan (Sindhudurg trials), South India",
+    "description": "Strategic commercial plantation tree tapped for liquid milky latex, the raw material for vehicle tires and industrial goods.",
+    "optimalTemp": "25°C - 34°C",
+    "waterRequirement": "2,000 - 3,000 mm evenly distributed.",
+    "soilPreference": "Deep, well-drained acidic lateritic soils.",
+    "growthStages": [
+      {
+        "stage": "Immature Tree",
+        "days": "Years 1-6",
+        "description": "Grafted sapling reaches 50 cm trunk girth."
+      },
+      {
+        "stage": "Tapping Phase",
+        "days": "Year 7 to 30",
+        "description": "Controlled spiral cut on bark; latex collected in coconut shell cups every alternate morning."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Abnormal Leaf Fall (Phytophthora)",
+        "symptoms": "Extensive defoliation during southwest monsoon.",
+        "riskPeriod": "Heavy continuous rains."
+      },
+      {
+        "name": "Pink Disease (Corticium salmonicolor)",
+        "symptoms": "Pink crust on trunk forks.",
+        "riskPeriod": "Wet foggy months."
+      }
+    ],
+    "commonPests": [
+      "Scale Insects",
+      "Termites"
+    ],
+    "generalPrevention": [
+      "Aerial or tractor spraying of copper oxychloride in oil before monsoon onset."
+    ]
+  },
+  {
+    "id": "lemongrass-commercial",
+    "name": "Lemongrass (Oil Distillation)",
+    "localName": "गवती चहा / लेमनग्रास (Lemongrass)",
+    "scientificName": "Cymbopogon flexuosus",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🌾",
+    "season": "Perennial Grass (Harvested 4 times a year)",
+    "maharashtraRegion": "Western Maharashtra, Vidarbha, Marathwada wasteland tracts",
+    "description": "Hardy aromatic grass distilled for pure citral-rich essential oil used in perfumes, soaps, vitamin A synthesis, and herbal tea.",
+    "optimalTemp": "24°C - 35°C",
+    "waterRequirement": "700 - 1,000 mm; survives severe drought.",
+    "soilPreference": "Poor, gravelly, eroded soils or reclaimed wastelands.",
+    "growthStages": [
+      {
+        "stage": "Establishment",
+        "days": "Days 1-60",
+        "description": "Rooted slips planted on ridges."
+      },
+      {
+        "stage": "First Harvest Cut",
+        "days": "Day 90",
+        "description": "Foliage cut 10 cm above ground."
+      },
+      {
+        "stage": "Ratoon Cuts",
+        "days": "Every 60-70 days",
+        "description": "Regrowth cut and loaded into steam distillation stills."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Rust (Puccinia nakanishikii)",
+        "symptoms": "Brown pustules on foliage.",
+        "riskPeriod": "Winter humidity."
+      }
+    ],
+    "commonPests": [
+      "Stem Borer"
+    ],
+    "generalPrevention": [
+      "Distill freshly wilted grass within 24 hours of cutting."
+    ]
+  },
+  {
+    "id": "sisal-ghaypat",
+    "name": "Sisal (Ghaypat)",
+    "localName": "घायपात (Ghaypat / Sisal)",
+    "scientificName": "Agave sisalana",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🌵",
+    "season": "Perennial Succulent",
+    "maharashtraRegion": "Dry rain-shadow belts of Solapur, Ahmednagar, Marathwada bunds",
+    "description": "Extremely drought-resilient succulent providing industrial leaf fibers for marine ropes, dartboards, and agricultural boundary fencing.",
+    "optimalTemp": "25°C - 40°C",
+    "waterRequirement": "200 - 400 mm.",
+    "soilPreference": "Arid rocky calcareous soils.",
+    "growthStages": [
+      {
+        "stage": "Rosette Growth",
+        "days": "Years 1-3",
+        "description": "Thick sword-like spiny leaves expand."
+      },
+      {
+        "stage": "Leaf Cutting",
+        "days": "Years 4-10",
+        "description": "Lower leaves harvested for mechanical decortication."
+      },
+      {
+        "stage": "Pole Flower & Bulbils",
+        "days": "Year 10",
+        "description": "Giant 6-meter flower pole emerges; plant dies leaving bulbils."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Leaf Rot",
+        "symptoms": "Soft rot in waterlogged soils.",
+        "riskPeriod": "Excess rains."
+      }
+    ],
+    "commonPests": [
+      "Sisal Weevil"
+    ],
+    "generalPrevention": [
+      "Plant along field boundaries to prevent soil erosion and keep stray livestock out."
+    ]
+  },
+  {
+    "id": "bamboo-commercial",
+    "name": "Bamboo (Green Gold)",
+    "localName": "बांबू / मानगा (Manvel / Bamboo)",
+    "scientificName": "Dendrocalamus strictus / Bambusa tulda",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🎋",
+    "season": "Perennial Fast Growing",
+    "maharashtraRegion": "Konkan (Sindhudurg Manga bamboo), Vidarbha forests, Western Ghats",
+    "description": "Wonder woody grass harvested for furniture, construction scaffolding, paper pulp, ethanol, and charcoal. Fast-growing carbon sink.",
+    "optimalTemp": "20°C - 35°C",
+    "waterRequirement": "1,200 - 2,500 mm.",
+    "soilPreference": "Well-drained hill soils and riverbanks.",
+    "growthStages": [
+      {
+        "stage": "Clump Establishment",
+        "days": "Years 1-3",
+        "description": "Rhizome spread and shoot emergence."
+      },
+      {
+        "stage": "Culm Hardening",
+        "days": "Years 4 onwards",
+        "description": "Canes mature; 3-year-old culms selectively harvested annually."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Culm Rot",
+        "symptoms": "Discolored shoots.",
+        "riskPeriod": "Water stagnation."
+      }
+    ],
+    "commonPests": [
+      "Bamboo Shoot Borer",
+      "Powder Post Beetle"
+    ],
+    "generalPrevention": [
+      "Treat felled bamboo with Borax-Boric acid solution to prevent wood borers."
+    ]
+  },
+  {
+    "id": "indigo",
+    "name": "True Indigo",
+    "localName": "नीळ (Neel / Indigo)",
+    "scientificName": "Indigofera tinctoria",
+    "category": "Cash & Commercial Crops",
+    "avatarEmoji": "🌱",
+    "season": "Kharif / Annual",
+    "maharashtraRegion": "Historical regions of Central and South India",
+    "description": "Historic natural blue dye plant cultivated for organic textile artisans and herbal hair color formulations.",
+    "optimalTemp": "22°C - 32°C",
+    "waterRequirement": "400 - 600 mm.",
+    "soilPreference": "Sandy loam with good drainage.",
+    "growthStages": [
+      {
+        "stage": "Vegetative Growth",
+        "days": "Days 1-60",
+        "description": "Pinnate leaves expand."
+      },
+      {
+        "stage": "Harvest at Bloom",
+        "days": "Days 70-90",
+        "description": "Cut at early flowering when indican glucoside peaks."
+      }
+    ],
+    "commonDiseases": [
+      {
+        "name": "Leaf Blight",
+        "symptoms": "Brown patches.",
+        "riskPeriod": "Cloudy weather."
+      }
+    ],
+    "commonPests": [
+      "Caterpillar"
+    ],
+    "generalPrevention": [
+      "Steep freshly cut foliage in water tanks for microbial dye fermentation."
+    ]
+  }
+]

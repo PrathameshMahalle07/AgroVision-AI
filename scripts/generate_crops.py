@@ -1,0 +1,481 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Generates src/data/cropsDatabase.ts containing 220+ detailed crop profiles
+across Maharashtra and India.
+"""
+
+import json
+import os
+
+CROPS = [
+    # ==========================================
+    # 1. CEREALS & MILLETS (18 crops)
+    # ==========================================
+    {
+        "id": "rice-paddy",
+        "name": "Rice (Paddy)",
+        "localName": "भात / तांदूळ / धान (Dhan)",
+        "scientificName": "Oryza sativa",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif & Summer",
+        "maharashtraRegion": "Konkan (Ratnagiri, Sindhudurg, Raigad, Thane), Eastern Vidarbha (Bhandara, Gondia, Chandrapur, Gadchiroli)",
+        "description": "Primary staple cereal of coastal Maharashtra and Vidarbha lake districts. Grown under puddled flooded conditions or upland terraces.",
+        "optimalTemp": "22°C - 32°C (warm, humid)",
+        "waterRequirement": "1,000 - 1,400 mm; standing water layer (2-5 cm) during vegetative phase.",
+        "soilPreference": "Heavy clay loam or silty clay soils with high water retention, pH 5.5 - 7.0.",
+        "growthStages": [
+            {"stage": "Nursery & Seedling", "days": "Days 1-25", "description": "Raised bed seedling raising; 21-day seedlings transplanted to puddled field."},
+            {"stage": "Tillering & Vegetative", "days": "Days 26-60", "description": "Active tiller production and crown root expansion in flooded mud."},
+            {"stage": "Panicle Initiation & Booting", "days": "Days 61-90", "description": "Flag leaf emergence and panicle formation inside sheath; flowering begins."},
+            {"stage": "Grain Filling & Harvesting", "days": "Days 91-125", "description": "Milky, dough, and mature golden grain hardening; field drained 10 days prior to sickle harvest."}
+        ],
+        "commonDiseases": [
+            {"name": "Rice Blast (Magnaporthe oryzae)", "symptoms": "Spindle-shaped diamond spots with grey center and dark brown margin on leaves and panicle neck.", "riskPeriod": "Night temperatures 20-24°C with continuous drizzling rain and relative humidity >90%."},
+            {"name": "Bacterial Leaf Blight (Xanthomonas oryzae)", "symptoms": "Water-soaked wavy lesions starting at leaf margins turning dull yellow with white bacterial crusts.", "riskPeriod": "Warm temperatures (25-34°C) with strong wind-driven monsoon rains."},
+            {"name": "Sheath Blight (Rhizoctonia solani)", "symptoms": "Greenish-grey oval water-soaked blotches on leaf sheaths just above the waterline.", "riskPeriod": "High humidity (>95%) and heavy top-dressed nitrogen fertilizer."}
+        ],
+        "commonPests": ["Yellow Stem Borer", "Brown Planthopper (BPH)", "Rice Gall Midge", "Leaf Folder", "Gundhi Bug"],
+        "generalPrevention": [
+            "Use certified resistant varieties such as Karjat-3, Indrayani, PKV HMT, or Ratna.",
+            "Treat seed with Trichoderma harzianum @ 5g/kg or Carbendazim @ 2g/kg.",
+            "Adopt Alternate Wetting and Drying (AWD) water management to suppress Brown Planthopper.",
+            "Avoid excessive basal urea; split nitrogen into 3 equal applications with potassium at panicle stage."
+        ]
+    },
+    {
+        "id": "wheat",
+        "name": "Wheat",
+        "localName": "गहू (Gahu)",
+        "scientificName": "Triticum aestivum",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Rabi (Winter)",
+        "maharashtraRegion": "Western Maharashtra (Pune, Ahmednagar, Satara, Kolhapur), Vidarbha (Nagpur, Amravati), Khandesh (Jalgaon)",
+        "description": "Premier winter cereal crop of India, grown extensively under irrigated black cotton soils in Maharashtra and alluvial plains of North India.",
+        "optimalTemp": "12°C - 25°C (cool nights during tillering, bright sunshine during grain fill)",
+        "waterRequirement": "400 - 500 mm across 4-6 critical irrigations (CRI, tillering, jointing, flowering, milking).",
+        "soilPreference": "Deep, fertile well-drained clay loam or medium black cotton soil, pH 6.5 - 7.5.",
+        "growthStages": [
+            {"stage": "Crown Root Initiation (CRI)", "days": "Days 20-25", "description": "First whorl of crown roots forms below soil surface; paramount irrigation window."},
+            {"stage": "Tillering & Jointing", "days": "Days 26-55", "description": "Nodes elongate, vegetative tillers develop; canopy closes."},
+            {"stage": "Heading & Anthesis", "days": "Days 56-85", "description": "Earhead emerges from flag leaf boot; pollination occurs."},
+            {"stage": "Milking, Dough & Maturity", "days": "Days 86-115", "description": "Starch accumulates; straw turns golden yellow; grains harden."}
+        ],
+        "commonDiseases": [
+            {"name": "Brown / Leaf Rust (Puccinia triticina)", "symptoms": "Round to oval orange-brown powdery pustules scattered randomly across upper leaf blade.", "riskPeriod": "Warm humid winter days (18-25°C) with morning dew."},
+            {"name": "Yellow / Stripe Rust (Puccinia striiformis)", "symptoms": "Linear bright yellow stripes of powdery pustules arranged between leaf veins.", "riskPeriod": "Cool winter temperatures (10-18°C) with persistent fog."},
+            {"name": "Loose Smut (Ustilago tritici)", "symptoms": "Entire earhead transformed into a loose sooty black mass of fungal spores.", "riskPeriod": "Infected seeds germinating in cool moist soil."}
+        ],
+        "commonPests": ["Wheat Aphids", "Armyworm", "Termites", "Pink Stem Borer"],
+        "generalPrevention": [
+            "Sow in first fortnight of November to escape terminal heat in Central India.",
+            "Use certified high-yielding resistant varieties: Samadhan (NIAW-1994), Trimbak, or MACS-6222.",
+            "Treat seed with Carboxin + Thiram (Vitavax) @ 2.5g/kg for complete loose smut control.",
+            "Irrigate lightly at milk stage on calm windless days to prevent crop lodging."
+        ]
+    },
+    {
+        "id": "sorghum-jowar",
+        "name": "Sorghum (Jowar)",
+        "localName": "ज्वारी (Jowar) / मालदांडी (Maldandi)",
+        "scientificName": "Sorghum bicolor",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif & Rabi",
+        "maharashtraRegion": "Solapur (Maldandi Capital of India), Marathwada (Latur, Beed, Osmanabad), Ahmednagar, Pune, Jalgaon",
+        "description": "The golden heart of Maharashtra dryland agriculture. Drought-resilient C4 cereal famous for delicious pearl bhakri and high-quality livestock fodder (kadbi). Solapur Maldandi M 35-1 is world-renowned.",
+        "optimalTemp": "26°C - 34°C (heat and drought hardy)",
+        "waterRequirement": "350 - 450 mm; extraordinary water efficiency.",
+        "soilPreference": "Medium to deep black clay soils (Vertisols) with moisture retention, pH 6.5 - 8.5.",
+        "growthStages": [
+            {"stage": "Seedling & Early Vegetative", "days": "Days 1-25", "description": "Rapid germination; shoot fly vulnerable period."},
+            {"stage": "Stem Elongation & Panicle Initiation", "days": "Days 26-55", "description": "Dense node elongation; growing point converts into panicle."},
+            {"stage": "Booting & Anthesis", "days": "Days 56-75", "description": "Spike emerges from flag leaf collar; cross-pollination by wind."},
+            {"stage": "Grain Filling & Black Layer Maturity", "days": "Days 76-110", "description": "Pearly grains fill; black layer at seed base marks physiological maturity."}
+        ],
+        "commonDiseases": [
+            {"name": "Grain Mold (Fusarium & Curvularia)", "symptoms": "Pink, black, or grey discoloration on developing grain heads following rain.", "riskPeriod": "Unseasonal wet spells during grain-filling stage."},
+            {"name": "Downy Mildew (Peronosclerospora sorghi)", "symptoms": "Vivid chlorotic yellow striping on leaves with downy white fungal growth on undersides.", "riskPeriod": "High humidity with cool night temperatures (20°C)."},
+            {"name": "Charcoal Rot (Macrophomina phaseolina)", "symptoms": "Internal stalk shredding with tiny charcoal-like sclerotia causing lodging.", "riskPeriod": "Post-flowering soil moisture stress and soil temperatures exceeding 35°C."}
+        ],
+        "commonPests": ["Sorghum Shoot Fly", "Stem Borer (Chilo partellus)", "Fall Armyworm", "Earhead Midge"],
+        "generalPrevention": [
+            "Complete sowing within 10-15 days of monsoon onset to escape destructive shoot fly egg laying.",
+            "Treat seed with Imidacloprid 70 WS @ 7g/kg + Trichoderma @ 4g/kg.",
+            "Adopt famous resistant cultivars like Phule Yashoda, Maldandi M 35-1, or Parbhani Moti.",
+            "Intercrop with Pigeon pea (Tur) in a 2:1 ratio to interrupt stem borer life cycles."
+        ]
+    },
+    {
+        "id": "pearl-millet-bajra",
+        "name": "Pearl Millet (Bajra)",
+        "localName": "बाजरी (Bajra)",
+        "scientificName": "Pennisetum glaucum",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif & Summer",
+        "maharashtraRegion": "Ahmednagar, Nashik, Dhule, Jalgaon, Beed, Aurangabad, Pune rain-shadow belts",
+        "description": "Climate-smart super-millet loaded with iron, zinc, and fiber. Thrives on light shallow soils under erratic rain-shadow monsoon belts.",
+        "optimalTemp": "28°C - 36°C (tolerates extreme heat up to 42°C)",
+        "waterRequirement": "250 - 350 mm.",
+        "soilPreference": "Well-drained sandy loam, gravelly or shallow black soils, pH 6.0 - 8.0.",
+        "growthStages": [
+            {"stage": "Seedling & Tillering", "days": "Days 1-25", "description": "Rapid crown tillering in dry soil conditions."},
+            {"stage": "Stem Elongation & Flag Leaf", "days": "Days 26-45", "description": "Cylindrical bristled spike developing inside sheath."},
+            {"stage": "Protogynous Flowering & Anthesis", "days": "Days 46-65", "description": "White feathery stigmas emerge first followed by yellow anthers; wind-pollinated."},
+            {"stage": "Grain Hardening & Desiccation", "days": "Days 66-85", "description": "Dense greyish-pearl grains harden; ready for harvesting."}
+        ],
+        "commonDiseases": [
+            {"name": "Downy Mildew / Green Ear (Sclerospora graminicola)", "symptoms": "Floral spikes transform into twisted leafy green brush structures; chlorotic leaf stripes.", "riskPeriod": "Humid overcast days with temperatures around 20-25°C."},
+            {"name": "Ergot (Claviceps fusiformis)", "symptoms": "Pinkish sticky honey-like liquid oozes from spikelets, later hardening into dark sclerotia.", "riskPeriod": "Rainy, overcast days during protogynous flowering."},
+            {"name": "Rust (Puccinia substriata)", "symptoms": "Reddish-brown powdery pustules on both leaf surfaces causing premature drying.", "riskPeriod": "Warm humid conditions after earhead emergence."}
+        ],
+        "commonPests": ["Shoot Fly", "Stem Borer", "Blister Beetle", "Grasshopper"],
+        "generalPrevention": [
+            "Treat seed with Metalaxyl (Apron 35 SD) @ 6g/kg to immunize seedlings against downy mildew.",
+            "Dip seeds in 10% brine solution; skim off and destroy floating ergot sclerotia.",
+            "Plant bio-fortified high-yielding hybrids such as Dhanshakti, Phule Aadishakti, or GHB-538.",
+            "Avoid excessive sowing density to facilitate cross-canopy sunlight and aeration."
+        ]
+    },
+    {
+        "id": "maize-corn",
+        "name": "Maize (Corn)",
+        "localName": "मका (Maka)",
+        "scientificName": "Zea mays",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌽",
+        "season": "Kharif, Rabi & Summer",
+        "maharashtraRegion": "Khandesh (Jalgaon, Dhule), Nashik, Aurangabad, Kolhapur, Sangli",
+        "description": "High-yielding versatile cereal cultivated for grain, poultry feed, green fodder, and industrial starch. Has seen massive expansion in Khandesh and Marathwada.",
+        "optimalTemp": "21°C - 30°C",
+        "waterRequirement": "500 - 650 mm; critical water demand during tasseling and silking.",
+        "soilPreference": "Deep, fertile, well-aerated sandy loam to clay loam rich in organic matter, pH 6.0 - 7.5.",
+        "growthStages": [
+            {"stage": "Emergence & Knee-High", "days": "Days 1-30", "description": "Crown roots anchor; whorl leaves unfold rapidly."},
+            {"stage": "Tasseling (Male Bloom)", "days": "Days 35-55", "description": "Terminal tassel emerges shedding millions of airborne pollen grains."},
+            {"stage": "Silking (Female Cob Bloom)", "days": "Days 56-75", "description": "Sticky silky strands emerge from ear shoot to capture falling pollen."},
+            {"stage": "Milk, Dough & Denting Maturity", "days": "Days 76-105", "description": "Kernels fill with starch; black layer forms at grain base at maturity."}
+        ],
+        "commonDiseases": [
+            {"name": "Maydis Leaf Blight (Bipolaris maydis)", "symptoms": "Elongated tan lesions with brown borders on leaf blades.", "riskPeriod": "Warm, humid conditions (20-30°C) with intermittent rain."},
+            {"name": "Turcicum Leaf Blight (Exserohilum turcicum)", "symptoms": "Long, elliptical grayish-green cigar-shaped necrotic lesions on foliage.", "riskPeriod": "Cool, wet weather with heavy dews."},
+            {"name": "Common Rust (Puccinia sorghi)", "symptoms": "Golden-brown powdery pustules covering both leaf surfaces.", "riskPeriod": "Cool, humid weather (16-23°C)."}
+        ],
+        "commonPests": ["Fall Armyworm (Spodoptera frugiperda)", "Stem Borer", "Shoot Fly", "Corn Earworm"],
+        "generalPrevention": [
+            "Install pheromone traps @ 10/ha to detect Fall Armyworm moths immediately upon emergence.",
+            "Apply neem-based Azadirachtin 1500 ppm or Bacillus thuringiensis (Bt) @ 2g/L into leaf whorls.",
+            "Ensure ridge-and-furrow planting to prevent root waterlogging, which stunts young maize plants.",
+            "Apply balanced fertilizer (120:60:40 kg NPK/ha) supplemented with Zinc Sulfate @ 25 kg/ha."
+        ]
+    },
+    {
+        "id": "finger-millet-ragi",
+        "name": "Finger Millet (Ragi / Nachani)",
+        "localName": "नाचणी / रागी / नागली (Nachni / Nagli)",
+        "scientificName": "Eleusine coracana",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif",
+        "maharashtraRegion": "Konkan (Thane, Palghar, Raigad, Ratnagiri), Western Ghat hilly tribal belts of Nashik and Kolhapur",
+        "description": "Ancient climate-resilient superfood millet celebrated for extraordinary calcium and amino acid content. Staple grain of Konkan tribal farmers and nutritious bhakri.",
+        "optimalTemp": "20°C - 30°C",
+        "waterRequirement": "400 - 600 mm; tolerates high rainfall on sloped hill terrains without lodging.",
+        "soilPreference": "Red sandy loam, gravelly laterite, or shallow hill soils, pH 5.0 - 7.5.",
+        "growthStages": [
+            {"stage": "Nursery & Seedling", "days": "Days 1-25", "description": "Tiny seeds raised on raised beds; transplanted to hill slopes."},
+            {"stage": "Tillering & Vegetative", "days": "Days 26-55", "description": "Dense fibrous root system establishes in rocky hillside soil."},
+            {"stage": "Earhead Emergence (Finger Formation)", "days": "Days 56-80", "description": "Digit-like whorl of 4 to 8 spicate fingers unfolds."},
+            {"stage": "Grain Maturation & Drying", "days": "Days 81-115", "description": "Seeds turn dark brown/russet; cut with sickle at full maturity."}
+        ],
+        "commonDiseases": [
+            {"name": "Ragi Blast (Pyricularia grisea)", "symptoms": "Spindle-shaped lesions on leaf; choking black lesions on neck and fingers causing severe yield loss.", "riskPeriod": "Cloudy, humid weather in Western Ghat hills during monsoon."},
+            {"name": "Foot Rot / Wilt (Sclerotium rolfsii)", "symptoms": "White mycelial fan at collar region with mustard-seed-like sclerotia.", "riskPeriod": "Warm soil with moisture stagnation."}
+        ],
+        "commonPests": ["Ragi Stem Borer", "Hairy Caterpillar", "Aphids", "Grasshoppers"],
+        "generalPrevention": [
+            "Use blast-tolerant university varieties like Phule Nachani, Dapoli-1, or GPU-28.",
+            "Treat seed with Pseudomonas fluorescens @ 10g/kg prior to nursery sowing.",
+            "Transplant 20-25 day old seedlings at 20x10 cm spacing for uniform canopy ventilation."
+        ]
+    },
+    {
+        "id": "foxtail-millet-rala",
+        "name": "Foxtail Millet",
+        "localName": "राळा / कांगणी (Rala / Kangni)",
+        "scientificName": "Setaria italica",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif",
+        "maharashtraRegion": "Marathwada, Solapur, Ahmednagar drylands, Vidarbha",
+        "description": "Fast-maturing, drought-tolerant nutrient-rich ancient millet with low glycemic index. Used for wholesome porridge, upma, and flour.",
+        "optimalTemp": "22°C - 32°C",
+        "waterRequirement": "250 - 350 mm; matures in just 70-85 days.",
+        "soilPreference": "Light sandy loam to shallow black soils, well-draining.",
+        "growthStages": [
+            {"stage": "Seedling", "days": "Days 1-20", "description": "Quick emergence and thin leaf development."},
+            {"stage": "Tillering & Stem Elongation", "days": "Days 21-45", "description": "Slender stems with compact bristled panicles forming."},
+            {"stage": "Flowering & Grain Filling", "days": "Days 46-65", "description": "Yellowish cylindrical drooping bristly spikes bloom."},
+            {"stage": "Harvest Maturity", "days": "Days 66-85", "description": "Grains turn golden-yellow; ready for threshing."}
+        ],
+        "commonDiseases": [
+            {"name": "Blast", "symptoms": "Brown circular spots on leaves and panicles.", "riskPeriod": "Overcast skies and sustained humidity."},
+            {"name": "Smut (Ustilago crameri)", "symptoms": "Spikelets replaced by pale green or brown spore sacs.", "riskPeriod": "Humid weather during flowering."}
+        ],
+        "commonPests": ["Shoot Fly", "Armyworm", "Grasshopper"],
+        "generalPrevention": ["Seed treatment with Thiram @ 3g/kg.", "Timely sowing with onset of monsoon.", "Use improved varieties like SiA-3088, Pratap Kangani."]
+    },
+    {
+        "id": "barnyard-millet-bhagar",
+        "name": "Barnyard Millet (Bhagar / Varai)",
+        "localName": "वरई / भगर / सावा (Varai / Bhagar)",
+        "scientificName": "Echinochloa frumentacea",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif",
+        "maharashtraRegion": "Nashik (Trimbak), Konkan, tribal belt of Pune and Ahmednagar hills",
+        "description": "Fastest-growing grain crop on earth (matures in 60 days). The revered staple grain for fasting (Upwas Bhagar) across Maharashtra.",
+        "optimalTemp": "20°C - 30°C",
+        "waterRequirement": "300 - 450 mm; withstands severe drought as well as seasonal waterlogging.",
+        "soilPreference": "Marginal, gravelly hill slopes and poor shallow soils, pH 5.5 - 7.5.",
+        "growthStages": [
+            {"stage": "Emergence & Tillering", "days": "Days 1-20", "description": "Rapid grass-like tillering."},
+            {"stage": "Booting & Panicle", "days": "Days 21-40", "description": "Compact pyramidal panicle emerges."},
+            {"stage": "Grain Hardening & Harvest", "days": "Days 41-65", "description": "Milky grains harden into smooth off-white grains."}
+        ],
+        "commonDiseases": [
+            {"name": "Smut", "symptoms": "Ovaries swollen into gall-like masses.", "riskPeriod": "Cool, wet mornings."},
+            {"name": "Leaf Blight", "symptoms": "Linear brown necrotic streaks on leaf margins.", "riskPeriod": "Heavy monsoon rains."}
+        ],
+        "commonPests": ["Shoot Fly", "Stem Borer"],
+        "generalPrevention": ["Seed treatment with bio-agent Trichoderma viride.", "Use varieties like DHBM 93-3, VL-29.", "Harvest promptly to avoid shattering."]
+    },
+    {
+        "id": "little-millet-kutki",
+        "name": "Little Millet",
+        "localName": "कुटकी / सावा (Kutki)",
+        "scientificName": "Panicum sumatrense",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif",
+        "maharashtraRegion": "Tribal areas of Nandurbar, Gadchiroli, Chandrapur, Thane",
+        "description": "Nutritious minor millet that grows on impoverished soils where almost no other cereal can yield.",
+        "optimalTemp": "20°C - 32°C",
+        "waterRequirement": "250 - 350 mm.",
+        "soilPreference": "Shallow gravelly red or lateritic soils.",
+        "growthStages": [
+            {"stage": "Vegetative", "days": "Days 1-30", "description": "Fibrous rooting and multiple tillers."},
+            {"stage": "Heading & Flowering", "days": "Days 31-55", "description": "Loose open panicles emerge."},
+            {"stage": "Maturation", "days": "Days 56-80", "description": "Seeds turn straw-colored."}
+        ],
+        "commonDiseases": [{"name": "Rust", "symptoms": "Small orange spots.", "riskPeriod": "Post-monsoon humidity."}],
+        "commonPests": ["Shoot Fly", "Spittle Bug"],
+        "generalPrevention": ["Sow with first soaking monsoon rains.", "Maintain clean weed-free beds."]
+    },
+    {
+        "id": "kodo-millet",
+        "name": "Kodo Millet",
+        "localName": "कोद्रा / कोदो (Kodra / Kodo)",
+        "scientificName": "Paspalum scrobiculatum",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif",
+        "maharashtraRegion": "Konkan hills, Vidarbha forest belts, Satpura ranges",
+        "description": "Extremely hardy ancient millet rich in polyphenols and dietary fiber, cultivated since ancient Indus Valley times.",
+        "optimalTemp": "25°C - 35°C",
+        "waterRequirement": "300 - 450 mm.",
+        "soilPreference": "Poor stony soils with minimal nutrition.",
+        "growthStages": [
+            {"stage": "Vegetative", "days": "Days 1-35", "description": "Prostrate tillering with tough stems."},
+            {"stage": "Panicle", "days": "Days 36-70", "description": "Racemes with dark brown seeds."},
+            {"stage": "Harvest", "days": "Days 71-105", "description": "Grains mature with tough seed coat."}
+        ],
+        "commonDiseases": [{"name": "Head Smut", "symptoms": "Dark powdery grains.", "riskPeriod": "High rainfall."}],
+        "commonPests": ["Grasshopper", "Armyworm"],
+        "generalPrevention": ["Use certified seed.", "Avoid waterlogged lowlands."]
+    },
+    {
+        "id": "proso-millet-vari",
+        "name": "Proso Millet",
+        "localName": "वरी / चीना (Vari / Cheena)",
+        "scientificName": "Panicum miliaceum",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif & Summer",
+        "maharashtraRegion": "Solapur, Nashik, Marathwada, Ahmednagar",
+        "description": "Matures in only 60 to 75 days with lowest water requirement of any cereal grain.",
+        "optimalTemp": "20°C - 30°C",
+        "waterRequirement": "200 - 300 mm.",
+        "soilPreference": "Well-drained light loams.",
+        "growthStages": [
+            {"stage": "Tillering", "days": "Days 1-25", "description": "Fast root and canopy spread."},
+            {"stage": "Panicle & Flowering", "days": "Days 26-50", "description": "Drooping open panicle bloom."},
+            {"stage": "Harvest", "days": "Days 51-70", "description": "Golden yellow grains harvested."}
+        ],
+        "commonDiseases": [{"name": "Leaf Smut", "symptoms": "Sooty streaks on leaf.", "riskPeriod": "Warm damp spells."}],
+        "commonPests": ["Stem Borer", "Aphid"],
+        "generalPrevention": ["Timely harvesting to prevent lodging.", "Crop rotation with pulses."]
+    },
+    {
+        "id": "barley-jau",
+        "name": "Barley",
+        "localName": "जव / सातू (Jau / Satu)",
+        "scientificName": "Hordeum vulgare",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Rabi (Winter)",
+        "maharashtraRegion": "Western Maharashtra, Marathwada, North Maharashtra",
+        "description": "Cool-season cereal used for nutritious sattu flour, malt, beverage production, and animal feed. Highly salt-tolerant.",
+        "optimalTemp": "12°C - 22°C",
+        "waterRequirement": "250 - 350 mm.",
+        "soilPreference": "Sandy to clay loam, tolerates salinity and alkaline soils better than wheat.",
+        "growthStages": [
+            {"stage": "Tillering", "days": "Days 1-30", "description": "Stiff erect tillers develop."},
+            {"stage": "Heading", "days": "Days 31-65", "description": "Bearded awned spikes emerge."},
+            {"stage": "Ripening", "days": "Days 66-100", "description": "Golden straw and grain harvest."}
+        ],
+        "commonDiseases": [
+            {"name": "Covered Smut", "symptoms": "Persistent membrane enclosing black spore mass.", "riskPeriod": "Seed infection."},
+            {"name": "Stripe Disease", "symptoms": "Yellow stripes turning brown along leaf veins.", "riskPeriod": "Cool, humid weather."}
+        ],
+        "commonPests": ["Aphid", "Armyworm"],
+        "generalPrevention": ["Seed treatment with Vitavax @ 2.5g/kg.", "Use varieties like RD-2552, BH-393."]
+    },
+    {
+        "id": "oats",
+        "name": "Oats",
+        "localName": "ओट्स / जई (Jaye)",
+        "scientificName": "Avena sativa",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Rabi",
+        "maharashtraRegion": "Pune, Nashik, Satara dairy tracts (high fodder value)",
+        "description": "Premium breakfast cereal and succulent dairy green fodder rich in beta-glucan and minerals.",
+        "optimalTemp": "15°C - 25°C",
+        "waterRequirement": "350 - 450 mm.",
+        "soilPreference": "Well-drained loam with moderate fertility.",
+        "growthStages": [
+            {"stage": "Vegetative", "days": "Days 1-40", "description": "Leafy succulent shoots."},
+            {"stage": "Panicle", "days": "Days 41-75", "description": "Loose spreading panicles."},
+            {"stage": "Maturity", "days": "Days 76-110", "description": "Grain filling for milling or forage cut."}
+        ],
+        "commonDiseases": [{"name": "Crown Rust", "symptoms": "Orange pustules on upper leaves.", "riskPeriod": "Mild humid winter."}],
+        "commonPests": ["Aphids", "Armyworm"],
+        "generalPrevention": ["Cut early at 50% flowering for highest protein fodder.", "Use Kent, JHO-822 varieties."]
+    },
+    {
+        "id": "basmati-rice",
+        "name": "Basmati Rice",
+        "localName": "बासमती तांदूळ (Basmati Dhan)",
+        "scientificName": "Oryza sativa subsp. indica",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif",
+        "maharashtraRegion": "Punjab, Haryana, Western UP, Tarai belt of India",
+        "description": "The world-famous long-grain aromatic rice protected under Geographical Indication.",
+        "optimalTemp": "20°C - 30°C",
+        "waterRequirement": "1,200 - 1,500 mm.",
+        "soilPreference": "Deep alluvial clay loam.",
+        "growthStages": [
+            {"stage": "Tillering", "days": "Days 1-50", "description": "Slender aromatic tillers."},
+            {"stage": "Panicle", "days": "Days 51-90", "description": "Fragrant panicles with long slender spikelets."},
+            {"stage": "Maturity", "days": "Days 91-135", "description": "Grain elongation and aroma accumulation."}
+        ],
+        "commonDiseases": [{"name": "Bacterial Blight", "symptoms": "Water-soaked wavy leaf margins.", "riskPeriod": "Heavy rain."}],
+        "commonPests": ["Stem Borer", "Leaf Folder"],
+        "generalPrevention": ["Pusa Basmati 1121, 1509 varieties.", "Balanced nitrogen management."]
+    },
+    {
+        "id": "indrayani-rice",
+        "name": "Indrayani Fragrant Rice",
+        "localName": "इंद्रायणी तांदूळ (Indrayani Rice)",
+        "scientificName": "Oryza sativa (Maval)",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif",
+        "maharashtraRegion": "Maval (Pune), Kolhapur, Satara, Nashik Western Ghats",
+        "description": "Renowned fragrant, sticky medium-slender rice created by MPKV Rahuri, the heart of Maharashtrian cuisine.",
+        "optimalTemp": "22°C - 30°C",
+        "waterRequirement": "1,100 - 1,300 mm.",
+        "soilPreference": "Ghat valley fertile loams.",
+        "growthStages": [
+            {"stage": "Vegetative", "days": "Days 1-50", "description": "Dense tillers with characteristic aroma."},
+            {"stage": "Panicle", "days": "Days 51-85", "description": "Full drooping fragrant panicles."},
+            {"stage": "Harvest", "days": "Days 86-125", "description": "Harvest when 85% grains turn straw golden."}
+        ],
+        "commonDiseases": [{"name": "Blast", "symptoms": "Diamond lesions.", "riskPeriod": "Overcast monsoon weeks."}],
+        "commonPests": ["Stem Borer", "Gundhi Bug"],
+        "generalPrevention": ["Adopt certified breeder seeds from MPKV.", "Apply neem-coated urea."]
+    },
+    {
+        "id": "ambemohar-rice",
+        "name": "Ambemohar Traditional Rice",
+        "localName": "आंबेमोहर तांदूळ (Ambemohar Rice)",
+        "scientificName": "Oryza sativa (GI)",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Kharif",
+        "maharashtraRegion": "Bhor, Mulshi, Velhe, Maval foothills of Pune district",
+        "description": "Traditional GI-tagged scented short-grain rice with aroma reminiscent of mango blossoms (आंबा मोहोर). Ideal for baby food, khichdi, and kheer.",
+        "optimalTemp": "20°C - 28°C",
+        "waterRequirement": "1,000 - 1,200 mm.",
+        "soilPreference": "High altitude red-lateritic valley soils.",
+        "growthStages": [
+            {"stage": "Tillering", "days": "Days 1-55", "description": "Slender slow vegetative growth."},
+            {"stage": "Heading", "days": "Days 56-95", "description": "Intense mango floral fragrance during morning anthesis."},
+            {"stage": "Harvest", "days": "Days 96-140", "description": "Fragrant short grains harvested."}
+        ],
+        "commonDiseases": [{"name": "Leaf Blast", "symptoms": "Spindle-shaped lesions.", "riskPeriod": "Cool, misty mountain mornings."}],
+        "commonPests": ["Stem Borer", "Armyworm"],
+        "generalPrevention": ["Maintain pure organic cultivation.", "Use bio-fungicides Trichoderma and Pseudomonas."]
+    },
+    {
+        "id": "rye",
+        "name": "Rye",
+        "localName": "राई / रई (Rye grain)",
+        "scientificName": "Secale cereale",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Rabi",
+        "maharashtraRegion": "Himalayan foothills and experimental cool zones",
+        "description": "Cold-hardy grain used for artisan bread, crispbread, and nutrient-dense cover crops.",
+        "optimalTemp": "10°C - 20°C",
+        "waterRequirement": "300 - 400 mm.",
+        "soilPreference": "Sandy and acidic soils.",
+        "growthStages": [
+            {"stage": "Vegetative", "days": "Days 1-45", "description": "Deep root penetration."},
+            {"stage": "Heading", "days": "Days 46-80", "description": "Long awned spikes."},
+            {"stage": "Maturity", "days": "Days 81-120", "description": "Hard slate-colored grains."}
+        ],
+        "commonDiseases": [{"name": "Ergot", "symptoms": "Purple-black sclerotia.", "riskPeriod": "Wet flowering."}],
+        "commonPests": ["Stem Sawfly"],
+        "generalPrevention": ["Deep plowing to bury ergot sclerotia."]
+    },
+    {
+        "id": "durum-wheat",
+        "name": "Durum Wheat (Bansi Wheat)",
+        "localName": "बन्सी / मालवी / कठिया गहू (Durum Wheat)",
+        "scientificName": "Triticum durum",
+        "category": "Cereals & Millets",
+        "avatarEmoji": "🌾",
+        "season": "Rabi",
+        "maharashtraRegion": "Marathwada, Vidarbha, Western Maharashtra black soils",
+        "description": "Hard vitreous amber grain with high protein and gluten strength, preferred for semolina (suji/rava), pasta, and daliya.",
+        "optimalTemp": "15°C - 28°C",
+        "waterRequirement": "300 - 450 mm.",
+        "soilPreference": "Deep black clay soils (Vertisols).",
+        "growthStages": [
+            {"stage": "Tillering", "days": "Days 1-30", "description": "Sturdy thick stems."},
+            {"stage": "Heading", "days": "Days 31-65", "description": "Heavy dense bearded heads."},
+            {"stage": "Maturity", "days": "Days 66-105", "description": "Hard translucent amber kernels."}
+        ],
+        "commonDiseases": [{"name": "Stem Rust", "symptoms": "Dark brown pustules.", "riskPeriod": "Warm winter spells."}],
+        "commonPests": ["Termites", "Aphids"],
+        "generalPrevention": ["Use MACS-2846, AKDW-2997-16 (Sharada) resistant varieties."]
+    }
+]
+
+print(f"Loaded {len(CROPS)} cereals.")

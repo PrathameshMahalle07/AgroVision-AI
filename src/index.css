@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1E2721;
+    background-color: #FBFBFA;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Newsreader', Georgia, serif;
+  }
+}
+
+@keyframes scanLine {
+  0% {
+    top: 0%;
+    opacity: 0.8;
+  }
+  50% {
+    top: 96%;
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    opacity: 0.8;
+  }
+}
+
+.animate-scan-line {
+  animation: scanLine 2.5s ease-in-out infinite;
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F5F1;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4D2C5;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9FB8A1;
+}
