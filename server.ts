@@ -13,11 +13,11 @@ dotenv.config({
 
 export const app = express();
 const PORT = Number(process.env.PORT) || 3000;
+// Stable multimodal Flash models supported by the current Gemini API.
 const GEMINI_FLASH_MODELS = [
   'gemini-3.8-flash',
-  'gemini-3.7-flash',
   'gemini-3.6-flash',
-  'gemini-3.5-flash',
+  'gemini-3.5-flash-lite',
 ];
 
 function getGeminiErrorStatus(error: unknown): number | undefined {
@@ -59,8 +59,8 @@ app.use(express.urlencoded({ extended: true, limit: '25mb' }));
 let aiClient: GoogleGenAI | null = null;
 function getGeminiClient(): GoogleGenAI | null {
   if (aiClient) return aiClient;
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) return null;
+  const apiKey = process.env.GEMINI_API_KEY?.trim();
+  if (!apiKey || apiKey === 'your_gemini_api_key_here') return null;
 
   aiClient = new GoogleGenAI({
     apiKey,
@@ -72,6 +72,19 @@ function getGeminiClient(): GoogleGenAI | null {
   });
   return aiClient;
 }
+
+// Deployment health check. This never returns the secret itself.
+// Open /api/health on the deployed site to verify that Vercel received the key.
+app.get('/api/health', (_req: Request, res: Response) => {
+  const configured = Boolean(process.env.GEMINI_API_KEY?.trim()) &&
+    process.env.GEMINI_API_KEY?.trim() !== 'your_gemini_api_key_here';
+
+  res.json({
+    ok: true,
+    geminiConfigured: configured,
+    environment: process.env.VERCEL ? 'vercel' : 'local',
+  });
+});
 
 // 1. Weather API Proxy using Open-Meteo (Free, reliable worldwide, no API key required)
 app.get('/api/weather', async (req: Request, res: Response) => {
@@ -614,14 +627,40 @@ Return only the requested JSON structure.`;
     res.json(parsedData);
   } catch (error: any) {
     console.error('Error in /api/diagnose-crop:', error);
+
     const status = getGeminiErrorStatus(error);
-    if (status === 429 || status === 500 || status === 503) {
-      return res.status(503).json({
-        error: 'Gemini is temporarily busy. Please wait a moment, then try your crop scan again.',
+    const message = typeof error?.message === 'string' ? error.message : 'Unknown Gemini error';
+
+    // Give the frontend a useful, non-secret diagnostic message.
+    if (status === 401 || status === 403) {
+      return res.status(502).json({
+        error: 'Gemini API authentication failed. Check that GEMINI_API_KEY is valid in Vercel Environment Variables, then redeploy.',
       });
     }
-    res.status(500).json({
+
+    if (status === 429) {
+      return res.status(503).json({
+        error: 'Gemini rate limit reached. Please wait a moment and try again.',
+      });
+    }
+
+    if (status === 400) {
+      return res.status(502).json({
+        error: 'Gemini rejected the request. Please try a smaller, clear JPG/PNG plant image.',
+        details: message.slice(0, 500),
+      });
+    }
+
+    if (status === 500 || status === 503) {
+      return res.status(503).json({
+        error: 'Gemini is temporarily unavailable. Please wait a moment and try again.',
+        details: message.slice(0, 500),
+      });
+    }
+
+    return res.status(500).json({
       error: 'Unable to analyze crop image at this time.',
+      details: message.slice(0, 500),
     });
   }
 });
